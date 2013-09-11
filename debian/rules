@@ -1,3 +1,10 @@
 #!/usr/bin/make -f
+
+PKGBASEDIR=debian/mediterranean-gtk-themes
+
 %:
 	dh $@
+
+override_dh_auto_install:
+	dh_auto_install
+	find $(PKGBASEDIR) -name ".gitignore" -delete
