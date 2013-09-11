@@ -8,3 +8,4 @@ PKGBASEDIR=debian/mediterranean-gtk-themes
 override_dh_auto_install:
 	dh_auto_install
 	find $(PKGBASEDIR) -name ".gitignore" -delete
+	find $(PKGBASEDIR) -iname "license" -delete
