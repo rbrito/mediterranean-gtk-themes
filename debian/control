@@ -15,7 +15,7 @@ Depends:
  libgtk-3-0 (>= 3.6),
  ${misc:Depends},
  ${shlibs:Depends}
-Description: Mediterranean Night GTK3 themes
-  This package provides the Mediterranean Night GTK3 (for GTK 3.6)
-  themes: MediterraneanDark, MediterraneanLight and MediterraneanNight, 3
-  themes derived from Adwaita Cupertino with dark colors.
+Description: Mediterranean Night GTK+ 3 themes
+ This package provides the Mediterranean Night GTK3 (for GTK+ >= 3.6) themes:
+ MediterraneanDark, MediterraneanLight and MediterraneanNight, 3 themes
+ derived from Adwaita Cupertino with dark colors.
