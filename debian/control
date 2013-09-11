@@ -2,6 +2,7 @@ Source: mediterranean-gtk-themes
 Section: gnome
 Priority: optional
 Build-Depends:
+ advancecomp,
  debhelper (>= 9),
  rdfind,
  symlinks
