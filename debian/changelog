@@ -1,7 +1,18 @@
-mediterranean-gtk-themes (2.03-1~1.gbp60c2b7) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~2.gbp431d6f) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @60c2b714d36f375263995618e0fc6f88aff82a89 **
+  ** SNAPSHOT build @431d6ff27640577b8c9fcbded3a2eb9799095f0c **
 
   * Initial package (Closes: #000000)
- 
+  * debian/rules:
+    + Fix lintian's package-contains-vcs-control-file.
+    + Fix lintian's extra-license-file.
+    + Fix lintian's executable-not-elf-or-script.
+    + Fix name of install target.
+  * debian/control:
+    + Fix lintian's capitalization-error-in-description.
+    + Fix lintian's description-starts-with-leading-spaces.
+    + Add rdfind and symlinks BDeps to make the package smaller.
+  * debian/rules:
+    + Use rdfind and symlinks to reduce size of binary package.
+
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
