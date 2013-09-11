@@ -1,0 +1,7 @@
+mediterranean-gtk-themes (2.03-1~1.gbp60c2b7) UNRELEASED; urgency=low
+
+  ** SNAPSHOT build @60c2b714d36f375263995618e0fc6f88aff82a89 **
+
+  * Initial package (Closes: #000000)
+ 
+ -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300

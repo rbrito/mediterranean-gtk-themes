@@ -1,0 +1,21 @@
+Source: mediterranean-gtk-themes
+Section: gnome
+Priority: optional
+Build-Depends:
+ debhelper (>= 9)
+Maintainer: Rogério Theodoro de Brito <rbrito@ime.usp.br>
+Standards-Version: 3.9.4
+Homepage: http://gnome-look.org/content/show.php?content=156782
+
+Package: mediterranean-gtk-themes
+Architecture: all
+Depends:
+ gtk2-engines-murrine (>= 0.98.1),
+ gtk2-engines-pixbuf,
+ libgtk-3-0 (>= 3.6),
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Mediterranean Night GTK3 themes
+  This package provides the Mediterranean Night GTK3 (for GTK 3.6)
+  themes: MediterraneanDark, MediterraneanLight and MediterraneanNight, 3
+  themes derived from Adwaita Cupertino with dark colors.
