@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~4.gbp60dae8) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~5.gbp939aaa) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @60dae86cb874e1cec8e02ad7932137fa8af71699 **
+  ** SNAPSHOT build @939aaa82254e7e9fcbbf36d6fe8fbe13a96a4539 **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -17,5 +17,7 @@ mediterranean-gtk-themes (2.03-1~4.gbp60dae8) UNRELEASED; urgency=low
   * debian/rules: Recurse into subdirectories to fix symlinks.
   * debian/patches: Add changes to themes from webupd8's PPA.
   * debian/source/format: Set to 3.0 (quilt).
+  * debian/rules: Add advancecomp to BDeps.
+  * debian/rules: Recompress the png files to save a lot of space.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
