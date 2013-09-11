@@ -2,7 +2,9 @@ Source: mediterranean-gtk-themes
 Section: gnome
 Priority: optional
 Build-Depends:
- debhelper (>= 9)
+ debhelper (>= 9),
+ rdfind,
+ symlinks
 Maintainer: Rogério Theodoro de Brito <rbrito@ime.usp.br>
 Standards-Version: 3.9.4
 Homepage: http://gnome-look.org/content/show.php?content=156782
