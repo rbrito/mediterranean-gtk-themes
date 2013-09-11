@@ -9,3 +9,4 @@ override_dh_auto_install:
 	dh_auto_install
 	find $(PKGBASEDIR) -name ".gitignore" -delete
 	find $(PKGBASEDIR) -iname "license" -delete
+	find $(PKGBASEDIR)/usr/share/themes -type f -print0 | xargs -0 chmod 644
