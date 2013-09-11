@@ -1,0 +1,115 @@
+Personalización de MediterraneanNight Series v2.0
+==================================================
+
+Autor: Rafa Cobreros rafacobreros@gmail.com
+Licencia: GPL
+Original theme en: http://gnome-look.org/content/show.php/MediterraneanNight+Series?content=156782
+
+Personalización del tema:
+1.- Estilo de nautilus (3.4 o 3.6)
+2.- Estilo de los botones de la barra de titulos (titlebar)
+3.- Estilo de tabs
+4.- Arreglar botones de Synaptic y Gimp
+
+NOTA:
+
+    - Todo lo explicado aqui hace referencia a la carpeta '../MediterraneanNight', pero debe aplicarse en la carpeta correspondiente del tema que quiera personalizar.
+
+	- Algunos cambios requieren cerrar y abrir sesión despues de hacerlos
+
+
+----------------------------------------
+* 1.- Seleccionar estilo para nautilus *
+----------------------------------------
+si usas nautilus 3.6.x no necesitas cambiar nada de este apartado, en cambio si tienes nautilus 3.4 necesitas modificar una linea del archivo gtk.css del tema.
+
+Editar (gedit) el archivo ../MediterraneanNight/gtk-3.0/gtk.css
+
+Ve a la ultima linea y encontraras 7 opciones para nautilus:
+
+	Si usas Nautilus 3.6.x (opcion por defecto)
+	1.- @import url("nautilus36.css"); 
+
+    Si usas Nautilus 3.4.x 
+	(Para gnome-shell)
+	2.- "gnome-nautilus34-gray.css"  		(nautilus sidebar y pathbar gris oscuro)
+	3.- "gnome-nautilus34-light.css" 		(nautilus sidebar azulado y pathbar claro))
+	4.- "gnome-nautilus34-gray-light.css" 	(nautilus sidebar gris oscuro y pathbar claro)
+
+	(para UNITY)
+	5.- "unity-nautilus34-gray.css"  		(nautilus sidebar y pathbar gris oscuro)
+	6.- "unity-nautilus34-light.css" 		(nautilus sidebar azulado y pathbar claro)
+	7.- "unity-nautilus34-gray-light.css" 	(nautilus sidebar gris oscuro y pathbar claro)
+
+modifica la linea "@import" para que se corresponda con el estilo que buscas,
+de forma que quede como una de las siete lineas de abajo.
+(ten cuidado de dejar solo UNA de las siete)
+
+@import url("nautilus36.css"); 
+@import url("gnome-nautilus34-gray.css");
+@import url("gnome-nautilus34-light.css"); 
+@import url("gnome-nautilus34-gray-light.css"); 
+@import url("unity-nautilus34-gray.css");
+@import url("unity-nautilus34-light.css"); 
+@import url("unity-nautilus34-gray-light.css"); 
+
+
+------------------------------------------------------------------------------
+* 2.- Seleccionar estilo de los botones de la barra de titulos de la ventana *
+------------------------------------------------------------------------------
+Si quieres cambiar los botones de la barra de titulos por los de otra variante, en la carpeta
+../MediterraneanNight/TitleBar-Buttons/" se encuentran los botones de todas las variantes del tema para Metacity (barra de titulos de la ventana) y el panel de Unity.
+
+botones Metacity
+metacity-buttons-glassy.tar.gz
+metacity-buttons-normal.tar.gz
+metacity-buttons-tribute.tar.gz
+metacity-buttons-white.tar.gz
+
+botones para el panel Unity
+unity-buttons-glassy.tar.gz
+unity-buttons-normal.tar.gz
+unity-buttons-tribute.tar.gz
+unity-buttons-white.tar.gz
+
+Por ejemplo, para cambiar los botones de MediterraneanNight por otros estilo Mac 
+Copia el contenido del archivo "metacity_buttons_glassy.tar.gz" en la carpeta "../MediterraneanNight/metacity-1/"
+
+Si además utilizas unity, copia también el contenido del archivo
+"unity-buttons-glassy.tar.gz" en la carpeta "../MediterraneanNight/unity/"
+
+y así con cualquiera de las 4 configuraciones de botones
+
+
+----------------------------------
+* 3.- Seleccionar estilo de TABS *
+----------------------------------
+Editar (gedit) el archivo ../MediterraneanNight/gtk-3.0/gtk.css
+
+Ve a la linea donde pone 
+@import url("tabs.css");
+
+y modificala segun la opcion que desees
+
+1.- tabs gris oscuro 
+@import url("tabs-dark.css");
+
+2.- tabs color azul (todas las tabs azules) 
+@import url("tabs-themed.css");
+
+tabs-themed para los temas oscuros:
+@import url("tabs-themed-dark.css");
+(MediterraneanDark, MediterraneanDarkest, MediterraneanGrayDark and MediterraneanTributeDark)
+
+3.- tabs gris claro con resalte azul 
+@import url("tabs.css");
+
+4.- tabs gris claro con resalte gris 
+@import url("tabs-mono.css");
+
+5.- Estilo de tabs traditional
+@import url("tabs-classic.css");
+
+(ten cuidado de dejar solo UNA de las cinco anteriores)
+
+

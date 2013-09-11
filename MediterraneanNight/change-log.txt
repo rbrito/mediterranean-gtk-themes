@@ -1,0 +1,216 @@
+Version 2.03 (2013-06-16)
+--------------------------
+Maintenace release
+- Full support gnome 3.6.x and gnome 3.8.x
+- Fixed: Nautilus Desktop and gnome-shell-3.8.x 
+  (unity + nautilus desktop + gnome 3.8.x  still bad, my impression is that it is a problem between unity and nautilus-3.8.x)
+- Fixed: GtkSwich looks bad on menus
+- Fixed: Epiphany-3.8.x progressbar loading page
+- Other minor cosmetic fixes
+
+
+Version 2.02 (2013-04-21)
+--------------------------
+Maintenace release
+- Partial support for gnome 3.8.x
+- Removed unico-engine dependencies
+(I think that fixes the problem with opensuse 12.3)
+- Added some texture in titlebar and toolbars
+- Fixed: combobox in some circumstances appear misaligned with other controls (e.g. gnome-tweak-tools)
+- Fixed: combobox insensitive color
+- darker text fonts
+
+
+Version 2.01 (2013-03-09)
+--------------------------
+Maintenace release
+- Fixed: bug progressbar of x-noise
+- Fixed: bug toolbar of synaptic-gtk3
+- Fixed: bug Xfce desktop icons
+- Other minor fixes
+- Added several Xfce window theme: Darkest serie, Tribute and TributeBlue
+- Changed GtkSwitch
+- Changed Metacity buttons MediterraneanWhite
+- Improved customization option: tabs-themed.css
+- Added customization option tabs-themed-dark.css 
+  the same as tabs-themed but better adapted to dark themes
+  MediterraneanDark, MediterraneanDarkest, MediterraneanGrayDark, MediterraneanTributeDark
+
+Version 2.0 (2013-02-19)
+---------------------------
+MediterraneanNight now contains 12 variations of the theme
+
+MediterraneanNight
+MediterraneanLight
+MediterraneanDark
+
+MediterraneanNightDarkest
+MediterraneanLightDarkest
+MediterraneanDarkest
+
+MediterraneanWhite
+MediterraneanWhiteNight
+MediterraneanGrayDark
+
+MediterraneanTribute
+MediterraneanTributeBlue
+MediterraneanTributeDark
+
+
+Version 2.0 PreRelease-2 (2013-02-12)
+-------------------------------------
+- Rethinking MediterraneanNightBlue, MediterraneanWhite, MediterraneanWhiteNight
+- Some fixes in GTK2 and GTK3
+- Changed the style of the progress bars
+- Fixed option for nautilus 3.4
+
+Version 2.0 PreRelease (2013-02-06)
+------------------------------------
+- PreRelease for test
+- MediterraneanNight now contains 11 variations of the theme
+- Have been redesigned many widgets
+- Note: No need to set the theme for gnome-shell or Unity
+
+Version 1.16.1 (2013-01-18)
+--------------------------
+Maintenace release
+- Only adjust the theme with the new Nemo pathbar
+(If you do not use nemo not need this update)
+
+Version 1.16 (2013-01-14)
+--------------------------
+Improvements only for gnome 3.6.x
+- New style gtkswitch
+- Buttons a little more rounded
+- Improved rhythmbox sidebar color
+- Nautilus 3.6: pathbar better spacing, improved icons sidebar color, changed the style of tabs (better readability)
+- Some improvements linked buttons
+- Fixed combobox border in toolbars (had not previously)
+- Fixed OSD widgets
+- Fixed checkbox and radiobutton symbols in menus (It looked bad in disabled state)
+- Fixed level-bar widget
+- Fixed synaptic toolbar (GTK3)
+- Other minor fixes and details
+
+Version 1.15 (2012-11-27)
+--------------------------------
+- Consolidation of the theme for the different versions gnome 3.6, 3.4, GTK2
+  (I also updated version for gnome 3.4)
+- Official support for Xfce (Great contribution of Andrew Chadwick)
+- 
+- Cosmetic variations in MediterraneanDark (and some fix)
+- Fix: trashBar color  Nautilus 3.6
+- Several fixes for better integration with gnome 3.6
+- Metacity: FIX gnome-shell hide Maximized titlebar in some apps (Nautilus 3.6, epiphany, ..)
+- Metacity: bordeless also in unity
+
+
+Version 1.14 (2012-11-07)
+-------------------------
+- The theme has been ported to Gnome 3.6.x
+- The theme is fully integrated with Nautilus 3.6.x, Nemo (cinnamon 1.6.x) and Nautilus 3.4.x (ubuntu 12.10)
+- Small cosmetic changes due to adaptation to gnome 3.6.x
+IMPORTANT:
+To make the theme be displayed correctly in Unity, must use the option of unity in the file gtks.css (you just have to change a line at the end of the file)
+- Inside is maintained for Gnome 3.4 MediterraneanNight v1.13 (MediterraneanNight-G3.4.tar.gz)
+
+Version 1.13 (2012-09-30)
+-------------------------
+Maintenace release, some reported bugs
+- the + and - buttons in gtk3 apps (such as gnome-control-center) look messed  ... FIXED
+- when the locationbar in nautilus is enabled the text to the left of the addressbar is unreadable ... FIXED
+- small change in raised buttons (toolbar gnome-control-center)
+
+Version 1.12 (2012-09-16)
+-------------------------
+Maintenace release
+MediterraneanDARK: (GTK2)
+- check-radio indicator looks bad - FIXED
+- different progressbar in GTK3 - FIXED
+- different slider button in GTK3 - FIXED
+- some inactive color - FIXED
+
+MediterraneanDARK: (GTK3) 
+- slider vertical higlight - FIXED
+- color button separator - FIXED
+- a little less blue background
+
+MediterraneanNight-Light
+- GTK3: vertical progressbar gradient - FIXED
+- some discrepancies GTK2-GTK3 insensitive widgets - FIXED
+- reworked some gradients GTK2 for better integration with GTK3
+- text color nautilus statusbar - FIXED
+
+
+IMPORTANT:
+To make the theme be displayed correctly in Unity, must use the option of unity in the file gtks.css (you just have to change a line at the end of the file)
+
+Version 1.11 (2012-09-14)
+This update has many changes in file names, so it is convenient to do a clean install
+- small adjustments to the Metacity theme
+- slight variation in the style of the gradients
+- slight variation in highlight Color
+- changes in the volume slider
+- redesign in some applications to improve the appearance of the theme
+gedit, terminal, nautilus, nemo (fork of nautilus 3.4) and epiphany now have tabs better integrated into the theme
+- reworking MediterraneanDARK theme Gtk3 and Gtk2 (Gtk2: some issues not resolved in firefox and virtualbox)
+- The same options for nautilus in unity (3 options) and gnome-shell (3 options) (see readme.txt)
+- fixed some small bugs ...
+
+Version 1.10 (2012-05-27)
+- Added a new theme! MediterraneanDark for those who love dark themes ;)
+Note:
+Temporarily MediterraneanDark maintain the GTK2 of MediterraneanNight, maybe it's good or bad, but for now is the only way I find to use reasonably Chrome and Firefox.
+(If you prefer, you can copy the folder GTK2 of MediterraneanLight in MediterraneanDark)
+
+- Fixed Color of some labels in rare circumstances 
+- GTK2: Added option to enable or disable the use of the images .svg in checkbox/radiobuttons 
+  This may solve the problem that some distros do not show checkbox/radiobuttons (See readme.txt)
+
+Version 1.09 (2012-05-20)
+Maintenance release
+- fix bug in metacity theme, not show well windows toolbars in some apps
+- corrected a discrepancy in the height of the menu items
+
+Version 1.08 (2012-05-15)
+- Fix bug reported by marcinekmk "in Nautilus when I manually enter path (Ctrl+L) the background of selected chars is the same as unselected"
+- By the way ;) ... Added two options tabs, tabs_themed.css and tabs_dark.css (now default)
+see screenshot 3 and readme.txt!! 
+
+- Added at the last minute: for gnome 3.2 also ;)
+
+Version 1.07 (2012-05-01)
+- The theme is now specifically for Gnome 3.4, and all future improvements and changes will be for Gnome 3.4 (MediterraneanNight and MediterraneanLight)
+- Temporarily maintaining a version for Gnome 3.2, although not evolve further. (MediterraneanNight-g3.2 and MediterraneanLight-g3.2)
+- No more error messages when running applications from the terminal (gnome 3.4)
+- Cosmetic changes in scrollbars (slightly darker) (gnome 3.4 and 3.2)
+- Some tweaks to toolbars GTK2
+- Evolution: Fixed bug in selected row color. (gnome 3.4 and 3.2)
+- Minor adjustments to improve the appearance of the theme (gnome 3.4 and 3.2)
+- instructions (see readme.txt) to fix Gimp toolbar-buttons.
+
+Version 1.06 (2012-04-10)
+- Mainly objective: integration with gnome 3.4 and ubuntu 12.04
+- In gnome-shell: The metacity theme is now borderless
+- Changed the look of pathbar buttons (nautilus-light and nautilus-gray-light)
+REMEMBER: you have three options for the appearance of nautilus
+- Added another option for tabs. See README.TXT (Now there are three options)
+added by default in MediterraneanLight (tabs.css, blue highlight)
+MediterraneanNight unchanged (tabs-mono.css, dark gray highlight)
+- Now the tone of the metacity theme is the same for MediterraneanNight and MediterraneanLight. (Enhances contrast in MediterraneanLight)
+- And other minor changes ....
+
+Version 1.05 (2012-03-26)
+- Changed (improved) the check-radio-buttons
+- narrower titlebars
+- minor adjustments to the tonality of the theme
+- instructions (see readme.txt) to fix synaptic buttons.
+Note: I have not set by default because sacrifices appearance/quality of the radio-buttons in gtk
+
+Version 1.03 (2012-03-10)
+- Changed the buttons of the toolbars
+- Adjusting the color of the nautilus cluebar (search, emptying trash, ...)
+- Modification of the default metacity theme (glassy buttons remain as an option, see readme.txt)
+- MediterraneanLight: color correction of menu text (was too bright)
+
+
