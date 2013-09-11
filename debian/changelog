@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~3.gbp17cc0d) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~4.gbp60dae8) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @17cc0d459a5d97629a4a5b851f36b09720532b32 **
+  ** SNAPSHOT build @60dae86cb874e1cec8e02ad7932137fa8af71699 **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -15,5 +15,7 @@ mediterranean-gtk-themes (2.03-1~3.gbp17cc0d) UNRELEASED; urgency=low
   * debian/rules:
     + Use rdfind and symlinks to reduce size of binary package.
   * debian/rules: Recurse into subdirectories to fix symlinks.
+  * debian/patches: Add changes to themes from webupd8's PPA.
+  * debian/source/format: Set to 3.0 (quilt).
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
