@@ -4,6 +4,8 @@ Priority: optional
 Build-Depends:
  advancecomp,
  debhelper (>= 9),
+ parallel,
+ python-scour,
  rdfind,
  symlinks
 Maintainer: Rogério Theodoro de Brito <rbrito@ime.usp.br>
