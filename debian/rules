@@ -10,7 +10,13 @@ override_dh_install:
 	find $(PKGBASEDIR) -name ".gitignore" -delete
 	find $(PKGBASEDIR) -iname "license" -delete
 	find $(PKGBASEDIR)/usr/share/themes -type f -print0 | xargs -0 chmod 644
+
+	# First recompress PNG files
+	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'optipng -o7 {}'
+	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'advpng -z3 {}'
+	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'advdef -z3 {}'
+	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'advpng -z4 {}'
+	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'advdef -z4 {}'
+
 	rdfind -outputname /dev/null -makesymlinks true $(PKGBASEDIR)/usr/share/themes
 	symlinks -s -c -v -r $(PKGBASEDIR)/usr/share/themes
-	find $(PKGBASEDIR)/usr/share/themes -iname "*.png" -type f -print0 | xargs -0 advpng -z3
-	find $(PKGBASEDIR)/usr/share/themes -iname "*.png" -type f -print0 | xargs -0 advpng -z4
