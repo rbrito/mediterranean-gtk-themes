@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~6.gbp163e0a) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~7.gbpb249e1) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @163e0ae2d2297a4ea2800b616f12f09b1e488212 **
+  ** SNAPSHOT build @b249e167241eb0cab50f61539f42db0cd5e97d7c **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -17,7 +17,9 @@ mediterranean-gtk-themes (2.03-1~6.gbp163e0a) UNRELEASED; urgency=low
   * debian/rules: Recurse into subdirectories to fix symlinks.
   * debian/patches: Add changes to themes from webupd8's PPA.
   * debian/source/format: Set to 3.0 (quilt).
-  * debian/control: Add advancecomp to BDeps.
+  * debian/control:
+    + Add advancecomp to BDeps.
+    + Add B-D on parallel, python-scour.
   * debian/rules:
     + Recompress the png files to save a lot of space.
     + Restrict PNG compression to PNG files only.
