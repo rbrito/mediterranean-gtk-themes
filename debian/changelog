@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~9.gbpf86f85) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~10.gbpd55c3c) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @f86f85ee941d9dfc99a87a4214dfeac7edbb3f1c **
+  ** SNAPSHOT build @d55c3c74124904618551f33425ada52d01a70971 **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -30,5 +30,6 @@ mediterranean-gtk-themes (2.03-1~9.gbpf86f85) UNRELEASED; urgency=low
   * debian/patches: Remove unused patch from webupd8.
   * debian/patches: Add patch to try to fix dark fonts in dark backgrounds.
   * debian/rules: Make use of parallel/xargs more robust with the -r switch.
+  * debian/patches: MediterraneanNight: Add support for header bars.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
