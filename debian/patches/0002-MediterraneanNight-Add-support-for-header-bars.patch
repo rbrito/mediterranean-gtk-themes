@@ -1,0 +1,170 @@
+From: Dvad <deibido.caruso@gmail.com>
+Date: Tue, 25 Feb 2014 07:14:23 -0800
+Subject: MediterraneanNight: Add support for header bars.
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Adapted from https://gist.github.com/Dvad/9210763/7df0e558 by Rogério Brito.
+---
+ MediterraneanNight/gtk-3.0/gtk-widgets.css | 147 +++++++++++++++++++++++++++++
+ 1 file changed, 147 insertions(+)
+
+diff --git a/MediterraneanNight/gtk-3.0/gtk-widgets.css b/MediterraneanNight/gtk-3.0/gtk-widgets.css
+index 316d7c1..341afeb 100644
+--- a/MediterraneanNight/gtk-3.0/gtk-widgets.css
++++ b/MediterraneanNight/gtk-3.0/gtk-widgets.css
+@@ -195,6 +195,153 @@ GtkLabel:insensitive {
+     border-radius: 2px;    
+ }
+ 
++/***************
++ * Header bars *
++ ***************/
++.header-bar {
++    border-width: 0 0 1px;
++    border-style: solid;
++    border-color: shade(@borders, 0.90);
++    border-radius: 15px 15px 0px 0px;
++    box-shadow: inset 0 -1px shade(@borders, 1.30);
++    background-color: @theme_bg_dark_color;
++
++    padding: 6px 6px 5px 6px;
++}
++
++.header-bar:backdrop {
++    border-image: linear-gradient(to top,
++                                  @unfocused_borders,
++                                  @unfocused_borders 1px,
++                                  @theme_unfocused_bg_color 1px) 0 0 2;
++    box-shadow: none;
++    background-color: @theme_bg_dark_color;
++}
++
++.header-bar .button.text-button {
++    padding: 2px 16px;
++}
++
++.header-bar .button.image-button {
++    padding: 5px 4px 5px 5px;
++}
++
++.header-bar .title {
++    font: Bold 11;
++    color: @theme_text_dark_color;
++
++}
++
++.header-bar .subtitle {
++    font: 9;
++    color: @theme_text_dark_color;
++
++}
++.header-bar GtkSeparatorToolItem,
++.header-bar .separator,
++.header-bar .separator:insensitive,
++.header-bar .pane-separator
++ {
++    border-color: 		 alpha (#000, 0.24);
++    border-bottom-color: alpha (#000, 0.08);
++    border-right-color:  alpha (#000, 0.08); 
++}
++/*******
++ * CSD *
++ *******/
++.titlebar {
++    text-shadow: 0 1px @wm_title_shadow;
++
++
++    border-radius: 7px 7px 0px 0px;
++}
++
++/* this is the default titlebar that is added by GTK
++ * when client-side decorations are in use and the application
++ * did not set a custom titlebar.
++ */
++.titlebar.default-decoration {
++    border: none;
++    box-shadow: none;
++}
++
++.titlebar .title {
++    font: Bold 11;
++}
++
++.titlebar:backdrop {
++    text-shadow: none;
++    background-image: none;
++    background-color: @theme_bg_dark_color;
++}
++
++.titlebar .titlebutton {
++    icon-shadow: 0px 1px @theme_shadow_dark_color;
++    color: @wm_title;
++    background: none;
++    padding: 5px 5px 6px 5px;
++
++    border-radius: 3px;
++    border-width: 1px 1px 2px 1px;
++    border-color: transparent;
++    border-style: solid;
++    border-image: none;
++}
++
++.titlebar .titlebutton:hover {
++    background-image: linear-gradient(to bottom,
++                                      @button_hover_gradient_color_a,
++                                      @button_hover_gradient_color_b);
++}
++
++.titlebar .titlebutton:active {
++    background-image: linear-gradient(to bottom,
++                                      @borders,
++                                      shade(@theme_bg_dark_color, 0.95)
++                                      );
++    color: @theme_selected_fg_color;
++    icon-shadow: none;
++}
++
++.titlebar .right .titlebutton:first-child {
++    border-left: 1px solid @menu_separator; 
++}
++
++.titlebar .right .titlebutton:last-child {
++
++}
++
++.titlebar .left .titlebutton:last-child {
++    border-right: 1px solid @menu_separator; 
++}
++
++.titlebar .left .titlebutton:first-child {
++
++}
++
++.titlebar .titlebutton:backdrop {
++    background-image: none;
++    color: @wm_unfocused_dark_title;
++    border-image: none;
++    icon-shadow: none;
++}
++
++.window-frame {
++    border-color: darker(@theme_bg_dark_color);
++    border-radius: 7px 7px 0 0;
++    border-width: 1px;
++    border-style: solid;
++
++    box-shadow: 0 2px 8px 3px @theme_shadow_dark_color;
++
++    /* this is used for the resize cursor area */
++    margin: 10px;
++}
++
++.window-frame:backdrop {
++    box-shadow: 0 2px 5px 1px @theme_shadow_dark_color;
++}
++
+ /*************
+  * separator *
+  *************/
