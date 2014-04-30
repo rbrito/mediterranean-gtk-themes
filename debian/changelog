@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~10.gbpd55c3c) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~11.gbp9a84b6) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @d55c3c74124904618551f33425ada52d01a70971 **
+  ** SNAPSHOT build @9a84b654f2fd4581cfa62a94e5b25f37f7c977d7 **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -31,5 +31,10 @@ mediterranean-gtk-themes (2.03-1~10.gbpd55c3c) UNRELEASED; urgency=low
   * debian/patches: Add patch to try to fix dark fonts in dark backgrounds.
   * debian/rules: Make use of parallel/xargs more robust with the -r switch.
   * debian/patches: MediterraneanNight: Add support for header bars.
+  * debian/patches: Support header bars also for MediterraneanNightDarkest.
+  * debian/patches: Add patch to honor rules of GTK2 panel.
+  * debian/patches: Disable rules for changing tab colors of the terminal.
+  * debian/rules: Deduplicate identical files, replacing them with symlinks.
+  * debian/rules: Deduplicate files before compression.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
