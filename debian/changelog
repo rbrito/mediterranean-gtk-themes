@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~7.gbpb249e1) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~9.gbpf86f85) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @b249e167241eb0cab50f61539f42db0cd5e97d7c **
+  ** SNAPSHOT build @f86f85ee941d9dfc99a87a4214dfeac7edbb3f1c **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -27,5 +27,8 @@ mediterranean-gtk-themes (2.03-1~7.gbpb249e1) UNRELEASED; urgency=low
       opportunities.
     + Try harder recompressing the PNG files.
     + Also recompress the SVG files.
+  * debian/patches: Remove unused patch from webupd8.
+  * debian/patches: Add patch to try to fix dark fonts in dark backgrounds.
+  * debian/rules: Make use of parallel/xargs more robust with the -r switch.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
