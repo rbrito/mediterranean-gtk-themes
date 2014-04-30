@@ -20,8 +20,8 @@ override_dh_install:
 	find $(PKGBASEDIR)/usr/share/themes -type f -iname "*.png" -print0 | parallel -0 --eta 'advdef -z4 {}'
 
 	# Next recompress SVG files
-	find $(PKGBASEDIR) -type f -iname "*.svg" -print0 | parallel -0 --eta 'scour -i {} -o {.}.min.svg --create-groups --enable-id-stripping --enable-comment-stripping --shorten-ids --remove-metadata'
-	find $(PKGBASEDIR) -type f -iname "*.min.svg" -print0 | xargs -0 prename -f 's/\.min\.svg$/.svg/'
+	find $(PKGBASEDIR) -type f -iname "*.svg" -print0 | parallel -0 -r --eta 'scour -i {} -o {.}.min.svg --create-groups --enable-id-stripping --enable-comment-stripping --shorten-ids --remove-metadata'
+	find $(PKGBASEDIR) -type f -iname "*.min.svg" -print0 | xargs -0 -r prename -f 's/\.min\.svg$$/.svg/'
 
 	rdfind -outputname /dev/null -makesymlinks true $(PKGBASEDIR)/usr/share/themes
 	symlinks -s -c -v -r $(PKGBASEDIR)/usr/share/themes
