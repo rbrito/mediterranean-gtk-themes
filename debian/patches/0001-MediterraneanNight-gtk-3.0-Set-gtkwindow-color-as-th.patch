@@ -1,0 +1,45 @@
+From: =?utf-8?q?Rog=C3=A9rio_Theodoro_de_Brito?= <rbrito@ime.usp.br>
+Date: Tue, 29 Apr 2014 22:02:28 -0300
+Subject: MediterraneanNight*: gtk-3.0: Set gtkwindow color as @theme_fg_color.
+
+This patch comes from a hint from "debianxfce11" at:
+
+    http://gnome-look.org/content/show.php?content=156782&forumpage=14
+
+Note that only two themes are patched, while we should actually patch all of
+the themes.
+---
+ MediterraneanNight/gtk-3.0/gtk-widgets.css        | 4 ++++
+ MediterraneanNightDarkest/gtk-3.0/gtk-widgets.css | 4 ++++
+ 2 files changed, 8 insertions(+)
+
+diff --git a/MediterraneanNight/gtk-3.0/gtk-widgets.css b/MediterraneanNight/gtk-3.0/gtk-widgets.css
+index e203679..316d7c1 100644
+--- a/MediterraneanNight/gtk-3.0/gtk-widgets.css
++++ b/MediterraneanNight/gtk-3.0/gtk-widgets.css
+@@ -66,6 +66,10 @@
+  * Base States *
+  ***************/
+ 
++GtkWindow {
++    color: @theme_fg_color;
++}
++
+ .background {
+     color: @theme_fg_color;
+     background-color: @theme_bg_color;
+diff --git a/MediterraneanNightDarkest/gtk-3.0/gtk-widgets.css b/MediterraneanNightDarkest/gtk-3.0/gtk-widgets.css
+index e203679..316d7c1 100644
+--- a/MediterraneanNightDarkest/gtk-3.0/gtk-widgets.css
++++ b/MediterraneanNightDarkest/gtk-3.0/gtk-widgets.css
+@@ -66,6 +66,10 @@
+  * Base States *
+  ***************/
+ 
++GtkWindow {
++    color: @theme_fg_color;
++}
++
+ .background {
+     color: @theme_fg_color;
+     background-color: @theme_bg_color;
