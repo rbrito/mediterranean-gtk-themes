@@ -1,0 +1,29 @@
+From: =?utf-8?q?Rog=C3=A9rio_Brito?= <rbrito@ime.usp.br>
+Date: Wed, 30 Apr 2014 18:54:31 -0300
+Subject: Include instructions for the panel.
+
+---
+ MediterraneanNight/gtk-2.0/gtkrc        | 2 +-
+ MediterraneanNightDarkest/gtk-2.0/gtkrc | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/MediterraneanNight/gtk-2.0/gtkrc b/MediterraneanNight/gtk-2.0/gtkrc
+index d72350e..849a76b 100644
+--- a/MediterraneanNight/gtk-2.0/gtkrc
++++ b/MediterraneanNight/gtk-2.0/gtkrc
+@@ -1046,4 +1046,4 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+ include "apps/thunar.rc"		# thunar especific
+ include "apps/terminal.rc"
+ include "apps/gmusicbrowser.rc"
+-
++include "apps/panel.rc"
+diff --git a/MediterraneanNightDarkest/gtk-2.0/gtkrc b/MediterraneanNightDarkest/gtk-2.0/gtkrc
+index 9089a39..484fd09 100644
+--- a/MediterraneanNightDarkest/gtk-2.0/gtkrc
++++ b/MediterraneanNightDarkest/gtk-2.0/gtkrc
+@@ -1045,4 +1045,4 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+ include "apps/thunar.rc"		# thunar especific
+ include "apps/terminal.rc"
+ include "apps/gmusicbrowser.rc"
+-
++include "apps/panel.rc"
