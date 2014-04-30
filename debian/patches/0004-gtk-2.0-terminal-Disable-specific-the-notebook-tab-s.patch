@@ -1,0 +1,71 @@
+From: =?utf-8?q?Rog=C3=A9rio_Brito?= <rbrito@ime.usp.br>
+Date: Wed, 30 Apr 2014 19:14:26 -0300
+Subject: gtk-2.0: terminal: Disable specific the notebook tab styling.
+
+This is "less bad" than what we had, but still quite far from the ideal,
+honestly.
+
+Oh, and those pesky trailing whitespaces.  Still not certain if I will
+remove them, unless I end up as the maintainer of this theme (which I would
+not like to).
+---
+ MediterraneanNight/gtk-2.0/apps/terminal.rc | 46 ++++++++++++++---------------
+ 1 file changed, 23 insertions(+), 23 deletions(-)
+
+diff --git a/MediterraneanNight/gtk-2.0/apps/terminal.rc b/MediterraneanNight/gtk-2.0/apps/terminal.rc
+index aa48c5f..a6e3cf0 100644
+--- a/MediterraneanNight/gtk-2.0/apps/terminal.rc
++++ b/MediterraneanNight/gtk-2.0/apps/terminal.rc
+@@ -13,29 +13,29 @@ style "terminal-scrollbar" = "scrollbar"
+ 
+ }
+ 
+-style "terminal-notebook"  
+-{
+-	bg[NORMAL]		= shade( 0.85, @sidebar_background)
+-	bg[ACTIVE]		= shade( 0.70, @sidebar_background)
+-	fg[NORMAL]      = shade (0.80, @text_color) # text selected tab
+-	fg[ACTIVE] 		= shade( 0.28, @sidebar_background)	# text unselected tab
+-
+-	engine "murrine"
+-	{
+-		gradient_shades		= {1.00,0.96,0.92,0.88}
+-		highlight_shade     = 1.03
+-		roundness       	= 0
+-		contrast        	= 0.0	
+-		
+-		## things that don't work:
+-		#glow_shade	= 0.8
+-		#glowstyle           = 2
+-		#focusstyle	    = 3
+-		#glazestyle          = 3
+-		#border_shades	= { 0.45, 2.5 }
+-		#prelight_shade	= 1.5
+-	}
+-}
++# style "terminal-notebook"  
++# {
++# 	bg[NORMAL]		= shade( 0.80, @sidebar_background)
++# 	bg[ACTIVE]		= shade( 1.20, @sidebar_background)
++# 	fg[NORMAL] 		= shade (0.80, @text_color) # text selected tab
++# 	fg[ACTIVE] 		= shade( 0.28, @sidebar_background)	# text unselected tab
++#
++# 	engine "murrine"
++# 	{
++# 		gradient_shades		= {1.00,0.96,0.92,0.88}
++# 		highlight_shade     = 1.03
++# 		roundness       	= 0
++# 		contrast        	= 0.0	
++#		
++# 		## things that don't work:
++# 		#glow_shade	= 0.8
++# 		#glowstyle           = 2
++# 		#focusstyle	    = 3
++# 		#glazestyle          = 3
++# 		#border_shades	= { 0.45, 2.5 }
++# 		#prelight_shade	= 1.5
++# 	}
++# }
+ 
+ style "notebook-button" {
+     xthickness		= 0
