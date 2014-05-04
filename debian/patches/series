@@ -2,3 +2,4 @@
 0002-MediterraneanNight-Add-support-for-header-bars.patch
 0003-Include-instructions-for-the-panel.patch
 0004-gtk-2.0-terminal-Disable-specific-the-notebook-tab-s.patch
+0005-Remove-control-characters-and-whitespace.patch
