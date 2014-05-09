@@ -7,10 +7,10 @@
                                      from (@button_gradient1),
                                      color-stop (0.40, @button_gradient2),
                                      color-stop (0.60, @button_gradient3),
-                                     to   (@button_gradient4)); 
+                                     to   (@button_gradient4));
 
-    border-width: 1px; 
-    border-style: solid; 
+    border-width: 1px;
+    border-style: solid;
 	border-radius: 0px;
 	border-top-color: 		shade(@notebook_border, 1.00);
 	border-left-color: 		shade(@notebook_border, 0.97);
@@ -20,7 +20,7 @@
 	border-image: none;
     box-shadow: inset  1px  1px alpha(#fff, 0.08),
                 inset -1px -1px alpha(#fff, 0.08);
-	color: shade(@theme_text_color, 0.95); 
+	color: shade(@theme_text_color, 0.95);
 	text-shadow: 0 1px @theme_shadow_color;
 }
 

@@ -54,7 +54,7 @@ PanelApplet .button *:prelight {
     border-image: none;
     border-width: 0px;
     border-radius: 0px;
-	
+
 	box-shadow: none;
 
     color: @os_chrome_fg_color;

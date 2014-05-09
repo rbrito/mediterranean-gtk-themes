@@ -11,7 +11,7 @@ think are important in a good, usable window manager theme:
    for the Xfwm variant.
 
  * Maximized windows have their top corner buttons in the screen's corner,
-   for Fitts's Law compliance. This should work fine with the default 
+   for Fitts's Law compliance. This should work fine with the default
    configuration, if you don't have a top panel.
 
  * Added a subtle one-pixel shadow outline around the window edges. Xfce

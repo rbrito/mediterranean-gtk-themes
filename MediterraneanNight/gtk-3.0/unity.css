@@ -14,7 +14,7 @@ UnityPanelWidget,
 .unity-panel.menubar,
 .unity-panel .menubar {
     color:				@theme_fg_dark_color;
-	text-shadow: 		0px 1px @theme_shadow_dark_color;    
+	text-shadow: 		0px 1px @theme_shadow_dark_color;
 }
 
 .unity-panel.menuitem,

@@ -12,7 +12,7 @@
                                      to (shade(@theme_tab_bg_color, 1.00)));
 
     border-width: 1px;
-    border-style: solid; 
+    border-style: solid;
 	border-radius: 0px;
 	border-color:       shade(@button_border_active, 1.15);
 
@@ -25,7 +25,7 @@
     box-shadow: inset  0px  1px alpha(#eee, 0.1),
                 inset  1px  0px alpha(#eee, 0.1),
                 inset -1px  0px alpha(#eee, 0.1),
-                inset  0px -1px alpha(#000, 0.1); 
+                inset  0px -1px alpha(#000, 0.1);
 }
 
 .notebook tab:active {
@@ -60,7 +60,7 @@
                 inset  1px  0px alpha(#000, 0.03),
                 inset -2px  0px alpha(#000, 0.02),
                 inset -1px  0px alpha(#000, 0.03),
-                inset  0px -1px alpha(#000, 0.20);	
+                inset  0px -1px alpha(#000, 0.20);
 }
 
 .notebook tab,

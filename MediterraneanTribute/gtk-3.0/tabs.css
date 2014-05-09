@@ -10,10 +10,10 @@
                                      from (@button_gradient1),
                                      color-stop (0.48, @button_gradient2),
                                      color-stop (0.52, @button_gradient3),
-                                     to   (@button_gradient4)); 
+                                     to   (@button_gradient4));
 
-    border-width: 1px; 
-    border-style: solid; 
+    border-width: 1px;
+    border-style: solid;
 	border-radius: 0px;
 	border-color: shade(@notebook_border, 1.00);
 	border-image: none;
@@ -50,7 +50,7 @@
 
 .notebook tab,
 .notebook tab GtkLabel {
-	color: shade(@theme_text_color, 1.00); 
+	color: shade(@theme_text_color, 1.00);
 	text-shadow: 1px 1px @theme_shadow_color;
 }
 

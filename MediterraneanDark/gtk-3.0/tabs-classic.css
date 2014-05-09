@@ -28,7 +28,7 @@
     background-color: 	shade(@bg_color, 0.90);
 
     border-width: 1px 1px 0px 1px;
-    border-style: solid; 
+    border-style: solid;
 	border-radius: 0px;
 	border-color: shade(@notebook_border, 1.00);
 	border-image: none;
@@ -41,7 +41,7 @@
                                      to   (shade(@theme_bg_color, 0.97)));
 
 	border-color: shade(@notebook_border, 1.00);
-	border-image: none; 
+	border-image: none;
 }
 
 .notebook tab GtkLabel {

@@ -2,7 +2,7 @@ Version 2.03 (2013-06-16)
 --------------------------
 Maintenace release
 - Full support gnome 3.6.x and gnome 3.8.x
-- Fixed: Nautilus Desktop and gnome-shell-3.8.x 
+- Fixed: Nautilus Desktop and gnome-shell-3.8.x
   (unity + nautilus desktop + gnome 3.8.x  still bad, my impression is that it is a problem between unity and nautilus-3.8.x)
 - Fixed: GtkSwich looks bad on menus
 - Fixed: Epiphany-3.8.x progressbar loading page
@@ -32,7 +32,7 @@ Maintenace release
 - Changed GtkSwitch
 - Changed Metacity buttons MediterraneanWhite
 - Improved customization option: tabs-themed.css
-- Added customization option tabs-themed-dark.css 
+- Added customization option tabs-themed-dark.css
   the same as tabs-themed but better adapted to dark themes
   MediterraneanDark, MediterraneanDarkest, MediterraneanGrayDark, MediterraneanTributeDark
 
@@ -97,7 +97,7 @@ Version 1.15 (2012-11-27)
 - Consolidation of the theme for the different versions gnome 3.6, 3.4, GTK2
   (I also updated version for gnome 3.4)
 - Official support for Xfce (Great contribution of Andrew Chadwick)
-- 
+-
 - Cosmetic variations in MediterraneanDark (and some fix)
 - Fix: trashBar color  Nautilus 3.6
 - Several fixes for better integration with gnome 3.6
@@ -130,7 +130,7 @@ MediterraneanDARK: (GTK2)
 - different slider button in GTK3 - FIXED
 - some inactive color - FIXED
 
-MediterraneanDARK: (GTK3) 
+MediterraneanDARK: (GTK3)
 - slider vertical higlight - FIXED
 - color button separator - FIXED
 - a little less blue background
@@ -163,8 +163,8 @@ Note:
 Temporarily MediterraneanDark maintain the GTK2 of MediterraneanNight, maybe it's good or bad, but for now is the only way I find to use reasonably Chrome and Firefox.
 (If you prefer, you can copy the folder GTK2 of MediterraneanLight in MediterraneanDark)
 
-- Fixed Color of some labels in rare circumstances 
-- GTK2: Added option to enable or disable the use of the images .svg in checkbox/radiobuttons 
+- Fixed Color of some labels in rare circumstances
+- GTK2: Added option to enable or disable the use of the images .svg in checkbox/radiobuttons
   This may solve the problem that some distros do not show checkbox/radiobuttons (See readme.txt)
 
 Version 1.09 (2012-05-20)
@@ -175,7 +175,7 @@ Maintenance release
 Version 1.08 (2012-05-15)
 - Fix bug reported by marcinekmk "in Nautilus when I manually enter path (Ctrl+L) the background of selected chars is the same as unselected"
 - By the way ;) ... Added two options tabs, tabs_themed.css and tabs_dark.css (now default)
-see screenshot 3 and readme.txt!! 
+see screenshot 3 and readme.txt!!
 
 - Added at the last minute: for gnome 3.2 also ;)
 

@@ -71,7 +71,7 @@ FrWindow .menubar,
 EogWindow .menubar,
 GeditWindow .menubar,
 TerminalWindow .menubar {
-    /* linea 3D  (oscura) 
+    /* linea 3D  (oscura)
 	box-shadow: inset  0px -1px shade(@theme_bg_dark_color, 0.77);*/
 
     /* linea 3D (clara)
@@ -92,7 +92,7 @@ FrWindow .primary-toolbar.toolbar,
 EvWindow .primary-toolbar .toolbar,
 EogWindow .primary-toolbar .toolbar,
 GeditWindow .primary-toolbar.toolbar {
-	
+
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 0.94)),

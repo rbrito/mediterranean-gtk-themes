@@ -11,15 +11,15 @@ style "thunar-location-buttons"
 }
 class "ThunarLocationButtons" style "thunar-location-buttons"
 
-style "sidepane" 
+style "sidepane"
 {
 	base[NORMAL]		= @sidebar_background			# backgroung
 	bg[NORMAL]			= shade (0.91, @base_color)
 	bg[PRELIGHT]		= @fg_color
-	
+
 	engine "murrine"
 	{
-		# gradient_shades		= {1.00, 1.05, 1.05, 1.10} 
+		# gradient_shades		= {1.00, 1.05, 1.05, 1.10}
 		contrast			= 0.80
 	}
 }

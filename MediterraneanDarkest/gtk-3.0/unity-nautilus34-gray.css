@@ -11,9 +11,9 @@ NautilusWindow .primary-toolbar.toolbar {
     border-width: 1px 0px 1px 1px;
     border-radius: 0px;
     border-style: solid;
-    border-color: 	shade(@theme_bg_dark_color, 0.83) 
-					@transparent 
-					shade(@theme_bg_dark_color, 0.85) 
+    border-color: 	shade(@theme_bg_dark_color, 0.83)
+					@transparent
+					shade(@theme_bg_dark_color, 0.85)
 					shade(@theme_bg_dark_color, 1.08);
 
 	/* Higlight linea superior */
@@ -21,7 +21,7 @@ NautilusWindow .primary-toolbar.toolbar {
 
     padding: 0px 3px;
     -GtkWidget-window-dragging: true;
-    -GtkToolbar-button-relief: normal;  
+    -GtkToolbar-button-relief: normal;
 }
 
 #nautilus-search-button *,
@@ -129,7 +129,7 @@ NautilusFloatingBar .button {
 }
 
 NautilusWindow .sidebar,
-NautilusWindow .sidebar.view, 
+NautilusWindow .sidebar.view,
 NautilusWindow .sidebar .view,
 NautilusWindow .sidebar.view:prelight,
 NautilusWindow .sidebar .view:prelight  {

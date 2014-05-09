@@ -2,17 +2,17 @@ style "theme-panel" = "murrine-dark"
 {
 	xthickness	= 0
 	ythickness	= 0
-	
+
 	bg[NORMAL]	= shade (0.7, @bg_color_dark)
 	bg[ACTIVE]	= shade (0.5, @bg_color_dark)
 	bg[PRELIGHT]	= shade (0.35, @bg_color_dark)
 	bg[SELECTED]	= shade (0.5, @bg_color_dark)
-	
+
 	fg[NORMAL]	= shade (0.9, @base_color)
 	fg[PRELIGHT]	= @base_color
 	fg[ACTIVE]	= shade (0.9, @base_color)
 	fg[SELECTED]	= shade (0.9, @base_color)
-	
+
 	text[NORMAL]   = shade (0.9, @base_color)
 	text[PRELIGHT] = @base_color
 	text[ACTIVE]   = shade (0.9, @base_color)
@@ -34,7 +34,7 @@ style "theme-panel-text"
 	fg[NORMAL]	= @base_color
 	fg[PRELIGHT]	= "#ffffff"
 	fg[ACTIVE]	= @base_color
-	
+
 	text[NORMAL]   = @base_color
 	text[PRELIGHT] = "#ffffff"
 	text[ACTIVE]   = @base_color
@@ -77,7 +77,7 @@ class "PanelToplevel*"              style "theme-panel"
 widget_class "*PanelToplevel*"      style "theme-panel"
 widget_class "*notif*"              style "theme-panel"
 widget_class "*Notif*"              style "theme-panel"
-widget_class "*Tray*"               style "theme-panel" 
+widget_class "*Tray*"               style "theme-panel"
 widget_class "*tray*"               style "theme-panel"
 widget_class "*computertemp*"       style "theme-panel"
 widget_class "*Applet*Tomboy*"      style "theme-panel"

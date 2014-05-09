@@ -96,7 +96,7 @@
 		<color value="shade/#6c95c3/0.96"/>
 	</gradient>
     <image filename="metacity-noise.png" x="0" y="0" width="object_width" height="object_height"/>
-    <line color="shade/#6c95c3/0.75" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/> 
+    <line color="shade/#6c95c3/0.75" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_maximized">
@@ -196,7 +196,7 @@
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
-		height="object_height"/>		
+		height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_button_unfocused">

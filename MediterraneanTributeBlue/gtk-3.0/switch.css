@@ -9,7 +9,7 @@ GtkSwitch {
 GtkSwitch.trough {
 
     /* color: shade (@internal_element_color, 0.60); */
-	color: shade(@theme_fg_color, 1.10);   
+	color: shade(@theme_fg_color, 1.10);
 	padding: 2px;
 
     background-image: -gtk-gradient (linear,
@@ -37,7 +37,7 @@ GtkSwitch.trough {
 
 GtkSwitch.trough:active {
 	color: #fff;
-	text-shadow: 1px 1px alpha(#000, 0.30);	
+	text-shadow: 1px 1px alpha(#000, 0.30);
 
 	background-image: -gtk-gradient (linear,
                                     left top, left bottom,
@@ -77,7 +77,7 @@ GtkSwitch.trough:insensitive {
 .primary-toolbar.toolbar GtkSwitch.trough:active,
 .primary-toolbar .toolbar GtkSwitch.trough,
 .primary-toolbar.toolbar GtkSwitch.trough {
-	
+
     border-top-color: 		shade(@theme_button_border_dark, 0.88);
     border-right-color: 	shade(@theme_button_border_dark, 0.96);
     border-left-color: 		shade(@theme_button_border_dark, 0.96);
@@ -108,7 +108,7 @@ GtkSwitch.slider:active {
     border-left-color: 		shade(@button_border, 0.70);
 }
 
-GtkSwitch.slider:insensitive {    
+GtkSwitch.slider:insensitive {
     background-image: none;
     background-color: @insensitive_bg_color;
 }

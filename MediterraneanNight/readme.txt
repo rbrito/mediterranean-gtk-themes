@@ -25,37 +25,37 @@ Edit (gedit) the file ../MediterraneanNight/gtk-3.0/gtk.css
 
 go to the last line of the file, there are seven options for nautilus:
 	If you use nautilus 3.6.x (by default)
-	1.- @import url("nautilus36.css"); 
+	1.- @import url("nautilus36.css");
 
-    If you use nautilus 3.4.x 
+    If you use nautilus 3.4.x
 	(for gnome-shell)
 	2.- "gnome-nautilus34-gray.css"  		(nautilus sidebar and toolbar dark gray)
 	3.- "gnome-nautilus34-light.css" 		(nautilus sidebar and toolbar light)
 	4.- "gnome-nautilus34-gray-light.css" (nautilus sidebar dark gray and toolbar light)
 
 	(for UNITY)
-	5.- "unity-nautilus34-gray.css"  		
-	6.- "unity-nautilus34-light.css" 		
-	7.- "unity-nautilus34-gray-light.css" 
+	5.- "unity-nautilus34-gray.css"
+	6.- "unity-nautilus34-light.css"
+	7.- "unity-nautilus34-gray-light.css"
 
 edit (please carefully) the corresponding line "@import" according to the style of nautilus you want,
 to make it ONE of the seven.
 (beware of leaving only one of seven)
 
-@import url("nautilus36.css"); 
+@import url("nautilus36.css");
 @import url("gnome-nautilus34-gray.css");
-@import url("gnome-nautilus34-light.css"); 
-@import url("gnome-nautilus34-gray-light.css"); 
+@import url("gnome-nautilus34-light.css");
+@import url("gnome-nautilus34-gray-light.css");
 @import url("unity-nautilus34-gray.css");
-@import url("unity-nautilus34-light.css"); 
-@import url("unity-nautilus34-gray-light.css"); 
+@import url("unity-nautilus34-light.css");
+@import url("unity-nautilus34-gray-light.css");
 
 
 -----------------------------------------
 * 2.- Select style for titlebar buttons *
 -----------------------------------------
-If you want to change the buttons on the title bar for the other variant, 
-the folder '../MediterraneanNight/TitleBar-Buttons/' 
+If you want to change the buttons on the title bar for the other variant,
+the folder '../MediterraneanNight/TitleBar-Buttons/'
 contains titlebar buttons of all variants of the theme for Metacity and the Unity panel.
 
 Metacity buttons:
@@ -96,7 +96,7 @@ and modify it according to the option you want
 @import url("tabs-themed.css");
 or
 @import url("tabs-themed-dark.css");
-(the same as tabs-themed.css but better adapted to dark themes: MediterraneanDark, 
+(the same as tabs-themed.css but better adapted to dark themes: MediterraneanDark,
  MediterraneanDarkest, MediterraneanGrayDark and MediterraneanTributeDark)
 
 3.- tabs with  blue highlight (only active tab)

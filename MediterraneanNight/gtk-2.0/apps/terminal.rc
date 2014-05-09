@@ -1,6 +1,6 @@
 style "terminal"
 {
-	
+
 	bg[NORMAL]	= @bg_color
 	bg[ACTIVE]	= @bg_color
 	bg[PRELIGHT]	= @bg_color
@@ -13,7 +13,7 @@ style "terminal-scrollbar" = "scrollbar"
 
 }
 
-# style "terminal-notebook"  
+# style "terminal-notebook"
 # {
 # 	bg[NORMAL]		= shade( 0.80, @sidebar_background)
 # 	bg[ACTIVE]		= shade( 1.20, @sidebar_background)
@@ -25,8 +25,8 @@ style "terminal-scrollbar" = "scrollbar"
 # 		gradient_shades		= {1.00,0.96,0.92,0.88}
 # 		highlight_shade     = 1.03
 # 		roundness       	= 0
-# 		contrast        	= 0.0	
-#		
+# 		contrast        	= 0.0
+#
 # 		## things that don't work:
 # 		#glow_shade	= 0.8
 # 		#glowstyle           = 2
@@ -40,14 +40,14 @@ style "terminal-scrollbar" = "scrollbar"
 style "notebook-button" {
     xthickness		= 0
     ythickness		= 0
-	bg[ACTIVE]		= shade (0.68, @sidebar_background)    
+	bg[ACTIVE]		= shade (0.68, @sidebar_background)
     bg[PRELIGHT]    = shade (0.75, @sidebar_background)
 	engine "murrine"
 	{
 		gradient_shades		= {1.00,1.00,1.00,1.00}
 		contrast        	= 0.6
 		roundness       	= 0
-	}    
+	}
 }
 
 class "*TerminalWindow"										style "terminal"

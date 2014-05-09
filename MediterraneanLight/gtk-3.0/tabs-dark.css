@@ -8,10 +8,10 @@
                                      from (shade(@theme_bg_dark_color, 0.64)),
                                      color-stop (0.48, shade(@theme_bg_dark_color, 0.59)),
                                      color-stop (0.52, shade(@theme_bg_dark_color, 0.53)),
-                                     to (shade(@theme_bg_dark_color, 0.49))); 
+                                     to (shade(@theme_bg_dark_color, 0.49)));
 
     border-width: 1px;
-    border-style: solid; 
+    border-style: solid;
 	border-radius: 0px;
 	border-color: shade(@notebook_border, 0.55);
 	border-image: none;

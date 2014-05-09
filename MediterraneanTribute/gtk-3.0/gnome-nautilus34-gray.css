@@ -17,7 +17,7 @@ NautilusWindow .primary-toolbar.toolbar {
 
     padding: 1px 3px 2px;
     -GtkWidget-window-dragging: true;
-    -GtkToolbar-button-relief: normal;    
+    -GtkToolbar-button-relief: normal;
 }
 
 #nautilus-search-button *,
@@ -128,7 +128,7 @@ NautilusFloatingBar .button {
 }
 
 NautilusWindow .sidebar,
-NautilusWindow .sidebar.view, 
+NautilusWindow .sidebar.view,
 NautilusWindow .sidebar .view,
 NautilusWindow .sidebar.view:prelight,
 NautilusWindow .sidebar .view:prelight  {

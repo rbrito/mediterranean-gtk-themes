@@ -1,5 +1,5 @@
 /*************************
- * menu  
+ * menu
  *
  *************************/
 
@@ -19,7 +19,7 @@
                                      left top, left bottom,
                                      from (shade(@menu_bg_dark_color, 1.03)),
                                      to   (shade(@menu_bg_dark_color, 0.97)));
-	
+
     padding: 5px 0px;
 	border-style: solid;
 	border-width: 1px;
@@ -77,7 +77,7 @@
  ***********/
 .menubar {
     -GtkWidget-window-dragging: true;
-    background-color: shade (@theme_bg_dark_color, 1.00); 
+    background-color: shade (@theme_bg_dark_color, 1.00);
     background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
@@ -129,7 +129,7 @@ DbusmenuGtkMenu .menuitem *,
 .toolbar .menuitem *,
 .primary-toolbar .menuitem *,
 .primary-toolbar .button .menuitem *,
-.menu .menuitem *, 
+.menu .menuitem *,
 .menuitem {
 /* Arregla cambio de altura en menu item nautilus view options */
     padding: 0px;
@@ -145,7 +145,7 @@ DbusmenuGtkMenu .menuitem,
 .toolbar .menuitem,
 .primary-toolbar .menuitem,
 .primary-toolbar .button .menuitem,
-.menu .menuitem, 
+.menu .menuitem,
 .menuitem {
     -GtkMenuItem-arrow-scaling: 0.7;
     background: transparent;
@@ -179,7 +179,7 @@ GtkTreeMenu .menuitem {
 }
 
 /* Workaround for lp:949368 */
-.toolbar GtkComboBox .menuitem *, 
+.toolbar GtkComboBox .menuitem *,
 GtkComboBox .menuitem * {
     color: @menu_fg_dark_color;
     text-shadow: 0px 1px @menu_shadow_dark_color;
@@ -191,7 +191,7 @@ GtkComboBox .menuitem *:hover {
 }
 
 .toolbar .raised .button .menuitem:hover,
-.toolbar.menubar .button .menuitem:hover, 
+.toolbar.menubar .button .menuitem:hover,
 .menu .menuitem:hover,
 .menuitem:hover {
 	/* contextual menu item-selected */
@@ -209,13 +209,13 @@ GtkComboBox .menuitem *:hover {
 .primary-toolbar .toolbar .button .menuitem *:hover,
 .primary-toolbar.toolbar .button .menuitem *:hover,
 .toolbar .raised .button .menuitem *:hover, /* menuitem opciones visualizacion nautilus  */
-.toolbar.menubar .button .menuitem *:hover, 
-GtkComboBox .menuitem *:hover, 
+.toolbar.menubar .button .menuitem *:hover,
+GtkComboBox .menuitem *:hover,
 GtkTreeMenu .menuitem *:active,
 GtkTreeMenu .menuitem *:prelight,
 .menuitem *:active,
 .menuitem *:prelight,
-.menuitem *:hover, 
+.menuitem *:hover,
 .menuitem:hover,
 .menu .menuitem:hover {
     color: @theme_selected_fg_color;
@@ -247,7 +247,7 @@ GtkTreeMenu .menuitem *:prelight,
     border-width: 0px;
 	border-style: none;
     background-image: none;
-	
+
 }
 
 .toolbar .raised .button .menuitem.check:inconsistent,
@@ -362,7 +362,7 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 
     border-image: -gtk-gradient (linear,
 							left top, right top,
-							from (alpha (#000, 0.00)),	
+							from (alpha (#000, 0.00)),
 							color-stop (0.25, alpha (#000, 0.03)),
 							color-stop (0.85, alpha (#000, 0.03)),
 							to (alpha (#000, 0.00))) 1;
@@ -376,13 +376,13 @@ GtkComboBox .menuitem.separator,
 .toolbar .menuitem.separator,
 .toolbar .primary-toolbar .menuitem.separator,
 .toolbar .raised .button .menuitem.separator,
-.toolbar.menubar .button .menuitem.separator, 
+.toolbar.menubar .button .menuitem.separator,
 .primary-toolbar .button .menuitem.separator,
 .menu .menuitem.separator,
 .menuitem.separator {
     -GtkWidget-wide-separators: false;
     -GtkMenuItem-horizontal-padding: 0;
-	-GtkWidget-separator-height: 1; 
+	-GtkWidget-separator-height: 1;
 
 	border-width: 0px;
 	border-style: none;

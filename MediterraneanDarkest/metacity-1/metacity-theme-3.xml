@@ -41,7 +41,7 @@
 	<distance name="bottom_height" value="0" />
 	<distance name="left_titlebar_edge" value="4"/>
 	<distance name="right_titlebar_edge" value="4"/>
-	<distance name="title_vertical_pad" value="7"/> 
+	<distance name="title_vertical_pad" value="7"/>
 	<border name="title_border" left="10" right="10" top="1" bottom="2"/>
 	<border name="button_border" left="0" right="0" top="3" bottom="2"/>
 </frame_geometry>
@@ -232,22 +232,22 @@
 
 <draw_ops name="border_right_unfocused">
 	<line
-		x1="width-1" y1="0" 
-		x2="width-1" y2="height" 
+		x1="width-1" y1="0"
+		x2="width-1" y2="height"
 		color="C_border_unfocused" />
 </draw_ops>
 
 <draw_ops name="border_left_focused">
 	<line
-		x1="0" y1="0" 
-		x2="0" y2="height" 
+		x1="0" y1="0"
+		x2="0" y2="height"
 		color="C_border_focused" />
 </draw_ops>
 
 <draw_ops name="border_left_unfocused">
 	<line
-		x1="0" y1="0" 
-		x2="0" y2="height" 
+		x1="0" y1="0"
+		x2="0" y2="height"
 		color="C_border_unfocused" />
 </draw_ops>
 

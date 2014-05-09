@@ -32,14 +32,14 @@ NautilusWindow .primary-toolbar.toolbar {
     box-shadow: none;
     padding: 3px 5px 3px;
     -GtkWidget-window-dragging: true;
-    -GtkToolbar-button-relief: normal;    
+    -GtkToolbar-button-relief: normal;
 }
 
 
 NautilusWindow .toolbar {
 	/* secundary search-toolbar */
     -GtkWidget-window-dragging: true;
-    -GtkToolbar-button-relief: normal;    
+    -GtkToolbar-button-relief: normal;
     padding: 3px 5px;
 }
 
@@ -51,7 +51,7 @@ NautilusWindow .toolbar.menubar .button *  {
 }
 
 /* buttons pathbar */
-NautilusWindow .toolbar.menubar .button, 
+NautilusWindow .toolbar.menubar .button,
 .toolbar.menubar NautilusPathBar .button {
     padding: 2px 4px;
 }
@@ -82,7 +82,7 @@ NautilusToolbar .button *:active:insensitive {
 
 .toolbar NautilusPathBar .button *:active,
 .toolbar NautilusPathBar .button *:hover {
-	
+
 }
 
 NautilusFloatingBar {
@@ -123,7 +123,7 @@ NautilusWindow .sidebar .scrollbar.trough.vertical {
 
 NautilusWindow .sidebar .frame {
     border-width: 0px;
-    border-style: none;	
+    border-style: none;
 }
 
 
@@ -140,7 +140,7 @@ NautilusWindow .pane-separator {
                                     to   (shade(@theme_bg_color, 0.65)));
 }
 
-.toolbar.menubar NautilusPathBar.linked .button *, 
+.toolbar.menubar NautilusPathBar.linked .button *,
 .toolbar.menubar NautilusPathBar .button * {
 	color: shade(@theme_fg_dark_color, 1.00);
 

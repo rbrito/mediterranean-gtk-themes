@@ -61,7 +61,7 @@
 @define-color error_color #cc0000;
 @define-color success_color #4e9a06;
 
-@define-color info_fg_color rgb (181, 171, 156); 
+@define-color info_fg_color rgb (181, 171, 156);
 @define-color info_bg_color rgb (252, 252, 189);
 @define-color warning_fg_color rgb (173, 120, 41);
 @define-color warning_bg_color rgb (250, 173, 61);
@@ -71,7 +71,7 @@
 @define-color error_bg_color rgb (240, 54, 54);
 
 @define-color os_chrome_bg_color @theme_bg_dark_color;
-@define-color os_chrome_fg_color @theme_fg_dark_color;  
+@define-color os_chrome_fg_color @theme_fg_dark_color;
 
 @define-color os_chrome_selected_bg_color @theme_selected_bg_color;
 @define-color os_chrome_selected_fg_color @theme_selected_fg_color;
@@ -130,7 +130,7 @@
 
 /* @define-color toolbar_gradient_base shade (mix(#d5dade, @theme_bg_dark_color, 0.75), 0.92); */
 @define-color toolbar_gradient_base shade (@theme_bg_dark_color, 0.97);
-@define-color toolbar_fg_color shade(@theme_fg_dark_color, 1.00); 
+@define-color toolbar_fg_color shade(@theme_fg_dark_color, 1.00);
 @define-color toolbar_shadow_color @theme_shadow_dark_color;
 @define-color toolbar_border_color @theme_button_border_dark;
 @define-color toolbar_active_button_color #909081;
@@ -139,7 +139,7 @@
 @define-color treeview_focus_border  @nautilus_cluebar_color;
 
 @define-color calc_display_fg_color black;
- 
+
 @define-color expander_row_selected_color #FFF;
 @define-color test #f00;
 
@@ -224,7 +224,7 @@
 @import url("unity-greeter.css");
 @import url("gnome-panel.css");
 
-/* Select style for TABS 
+/* Select style for TABS
 
 	1.- tabs dark gray (full)
 	@import url("tabs-dark.css");
@@ -242,7 +242,7 @@
 	@import url("tabs-classic.css");
 
 	(Be careful to leave only ONE of the five,
-	edit the line below according to the style you want) 
+	edit the line below according to the style you want)
 */
 @import url("tabs-mono.css");
 
@@ -250,10 +250,10 @@
 @import url("gnome-mdi.css");
 
 
-/* 
+/*
 	There are 2 options for Unity panel:
 
-	If you prefer the dark panel "Unity" 
+	If you prefer the dark panel "Unity"
 	------------------------------------
 	@import url("unity-darkest.css");
 
@@ -261,19 +261,19 @@
 	--------------------------------------------------------------
 	@import url("unity.css");
 
-	(edit the line below according to the style you want) 	
+	(edit the line below according to the style you want)
 -------------------------------------------------------------- */
 @import url("unity.css");
 
-/*  
+/*
 	There are 7 options for nautilus:
 
 	-----------------------------------
 	 Nautilus 3.6 (default)
 	-----------------------------------
 	Nautilus 3.6.x for gnome-shell 3.6.x or unity
-		@import url("nautilus36.css"); 
-	
+		@import url("nautilus36.css");
+
 	-----------------------------------
 	 3 for Nautilus 3.4 GNOME-SHELL
 	-----------------------------------
@@ -281,10 +281,10 @@
 		@import url("gnome-nautilus34-gray.css");
 	OR
 	2.- nautilus sidebar and pathbar light:
-		@import url("gnome-nautilus34-light.css"); 
+		@import url("gnome-nautilus34-light.css");
 	OR
 	3.- nautilus sidebar dark gray and pathbar light:
-		@import url("gnome-nautilus34-gray-light.css"); 
+		@import url("gnome-nautilus34-gray-light.css");
 
 	-----------------------------------
 	 3 for Nautilus 3.4 UNITY
@@ -293,13 +293,13 @@
 		@import url("unity-nautilus34-gray.css");
 	OR
 	2.- nautilus sidebar and pathbar light:
-		@import url("unity-nautilus34-light.css"); 
+		@import url("unity-nautilus34-light.css");
 	OR
 	3.- nautilus sidebar dark gray and pathbar light:
-		@import url("unity-nautilus34-gray-light.css"); 
+		@import url("unity-nautilus34-gray-light.css");
 
 
-	(edit the line below according to the style of nautilus you want) 
+	(edit the line below according to the style of nautilus you want)
 -------------------------------------------------------------------- */
 @import url("nautilus36.css");
 

@@ -10,8 +10,8 @@
 
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
-    
-    -GtkScrollbar-min-slider-length: 30;	
+
+    -GtkScrollbar-min-slider-length: 30;
 }
 
 .scrollbar.trough.vertical {
