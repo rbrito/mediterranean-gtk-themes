@@ -3,7 +3,7 @@
 PKGBASEDIR=debian/mediterranean-gtk-themes
 
 %:
-	dh $@
+	dh $@ --parallel
 
 override_dh_install:
 	dh_install
