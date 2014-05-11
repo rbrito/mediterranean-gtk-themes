@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~11.gbp9a84b6) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03-1~12.gbp2b74aa) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @9a84b654f2fd4581cfa62a94e5b25f37f7c977d7 **
+  ** SNAPSHOT build @2b74aa2ab10b75459f72d226545dff9913af31f6 **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -36,5 +36,8 @@ mediterranean-gtk-themes (2.03-1~11.gbp9a84b6) UNRELEASED; urgency=low
   * debian/patches: Disable rules for changing tab colors of the terminal.
   * debian/rules: Deduplicate identical files, replacing them with symlinks.
   * debian/rules: Deduplicate files before compression.
+  * debian: Add instructions for git-buildpackage.
+  * debian/README.source: Add instructions of my usual workflow.
+  * debian/rules: Allow some parts to be run in parallel.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
