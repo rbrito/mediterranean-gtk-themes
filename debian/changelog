@@ -1,6 +1,6 @@
-mediterranean-gtk-themes (2.03-1~12.gbp2b74aa) UNRELEASED; urgency=low
+mediterranean-gtk-themes (2.03.0.1-1~1.gbpe76c46) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build @2b74aa2ab10b75459f72d226545dff9913af31f6 **
+  ** SNAPSHOT build @e76c46beb6dfdfe1e3adf9c1ab6e5378f9c948ba **
 
   * Initial package (Closes: #000000)
   * debian/rules:
@@ -39,5 +39,6 @@ mediterranean-gtk-themes (2.03-1~12.gbp2b74aa) UNRELEASED; urgency=low
   * debian: Add instructions for git-buildpackage.
   * debian/README.source: Add instructions of my usual workflow.
   * debian/rules: Allow some parts to be run in parallel.
+  * debian/patches: Remove all patches. Applied upstream.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Wed, 11 Sep 2013 05:19:27 -0300
