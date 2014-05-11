@@ -1,0 +1,17 @@
+Debian packaging for pkg-mediterranean-gtk-themes
+-------------------------------------------------
+
+A quick summary of how one can update the Debian packaging of
+pkg-mediterranean-gtk-themes is to, assuming that one already has the
+packages `devscripts`, `git-buildpackage`, and `pristine-tar` installed:
+
+    gbp-clone --all git://github.com/rbrito/pkg-mediterranean-gtk-themes.git
+    cd pkg-mediterranean-gtk-themes
+    git checkout -- debian
+    [ Make here some adaptations, like updating debian/changelog, if needed ]
+    git-buildpackage
+
+These are the important steps and may need to be changed according to
+deviations, say, in the release process of pkg-mediterranean-gtk-themes.
+
+ -- Rogério Brito <rbrito@ime.usp.br>, Sun, 11 May 2014 03:13:50 -0300
