@@ -1,12 +1,53 @@
+style "murrine-dark" {
+      # Stolen from https://bbs.archlinux.org/viewtopic.php?pid=1026506#p1026506
+      # I (rbrito) made the following substitutions:
+      # @text_color_dark with @theme_text_dark_color
+      # @bg_color_dark with @theme_bg_dark_color
+      base[NORMAL]		= @theme_bg_dark_color
+      base[PRELIGHT]		= shade (0.95, @theme_bg_dark_color)
+      base[INSENSITIVE]		= @theme_bg_dark_color
+      bg[NORMAL]		= @theme_bg_dark_color
+      bg[PRELIGHT]		= shade (1.02, @theme_bg_dark_color)
+      bg[SELECTED]		= shade (0.90, @selected_bg_color)
+      bg[INSENSITIVE]		= @theme_bg_dark_color
+      bg[ACTIVE]		= shade (1.04, @theme_bg_dark_color)
+      fg[NORMAL]		= @theme_text_dark_color
+      fg[PRELIGHT]		= @theme_text_dark_color
+      fg[SELECTED]		= @theme_text_dark_color
+      fg[ACTIVE]		= @theme_text_dark_color
+      fg[INSENSITIVE]		= darker (@bg_color)
+      text[NORMAL]		= @theme_text_dark_color
+      text[PRELIGHT]		= @theme_text_dark_color
+      text[ACTIVE]		= @theme_text_dark_color
+      text[SELECTED]		= @theme_text_dark_color
+      text[INSENSITIVE]		= darker (@theme_bg_dark_color)
+}
+
+# Stolen from: https://forum.xfce.org/viewtopic.php?pid=28950#p28950
+# I (rbrito) made the following substitutions:
+# @text_color_dark with @theme_text_dark_color
+# @bg_color_dark with @theme_bg_dark_color
+style "murrine-wide-dark"    = "murrine-dark"    {
+      xthickness = 2 ythickness = 2
+}
+
+style "murrine-menubar" = "murrine-dark" {
+    ythickness    = 0
+    bg[NORMAL]    = @bg_color
+    fg[NORMAL]    = @fg_color
+    fg[PRELIGHT]    = @fg_color
+    fg[SELECTED]    = @fg_color
+}
+
 style "theme-panel" = "murrine-dark"
 {
 	xthickness	= 0
 	ythickness	= 0
 
-	bg[NORMAL]	= shade (0.7, @bg_color_dark)
-	bg[ACTIVE]	= shade (0.5, @bg_color_dark)
-	bg[PRELIGHT]	= shade (0.35, @bg_color_dark)
-	bg[SELECTED]	= shade (0.5, @bg_color_dark)
+	bg[NORMAL]	= shade (0.7, @theme_bg_dark_color)
+	bg[ACTIVE]	= shade (0.5, @theme_bg_dark_color)
+	bg[PRELIGHT]	= shade (0.35, @theme_bg_dark_color)
+	bg[SELECTED]	= shade (0.5, @theme_bg_dark_color)
 
 	fg[NORMAL]	= shade (0.9, @base_color)
 	fg[PRELIGHT]	= @base_color
@@ -42,6 +83,10 @@ style "theme-panel-text"
 
 style "panel-entry" = "murrine-dark"
 {
+        bg[SELECTED]	= shade(1.1, @selected_bg_color)
+        bg[ACTIVE]	= shade(1.1, @selected_bg_color)
+        bg[NORMAL]	= shade(1.1, @selected_bg_color)
+
 	fg[NORMAL]	= @text_color
 	fg[PRELIGHT]	= @text_color
 	fg[ACTIVE]	= @text_color
@@ -93,9 +138,9 @@ class "*Xfce*Panel*"                style "theme-panel"
 widget "*WnckPager*"	    	    style "workspace-switcher"
 
 # Fix gtk-entries in the panel
-class "GtkEntry"		    style "murrine-combo"
-class "*SexyIconEntry*"		    style:highest "murrine-combo"	# fixes dict-plugin
-widget "*xfce4-verve-plugin*GtkEntry"	style:highest "murrine-combo"	# fixes verve-plugin
+class "GtkEntry"		    style "entry"
+class "*SexyIconEntry*"		    style:highest "entry"	# fixes dict-plugin
+widget "*xfce4-verve-plugin*GtkEntry"	style:highest "entry"	# fixes verve-plugin
 
 # Make sure panel text color doesn't change
 widget_class "*Panel*MenuBar*"      style "theme-main-menu-text"
@@ -104,12 +149,12 @@ widget "*.clock-applet-button.*"    style "theme-panel-text"
 widget "*PanelApplet*"              style "theme-panel-text"
 
 # dark menus
-widget_class "*<GtkMenu>*"              	style "murrine-dark"
+widget_class "*<GtkMenu>*"              	style "theme-main-menu-text"
 widget_class "*<GtkMenuItem>*"          	style "murrine-wide-dark"
 widget_class "*<GtkMenuItem>.*.<GtkCalendar>"	style "murrine-dark"
 widget_class "*<GtkMenuItem>.*.<GtkEntry>"	style "panel-entry"
-widget_class "*<GtkMenuItem>.*.<GtkScale>" 	style "murrine-scale-dark"
-widget_class "*<GtkMenuBar>*"           	style "murrine-menubar"
+widget_class "*<GtkMenuItem>.*.<GtkScale>" 	style "murrine-dark"
+widget_class "*<GtkMenuBar>*"           	style "theme-main-menu-text"
 widget "*.gtk-combobox-popup-menu.*"   		style "murrine-wide-dark"
 
 # dark bg and black text for gdm's panel
