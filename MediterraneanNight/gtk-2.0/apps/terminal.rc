@@ -26,20 +26,17 @@ style "terminal-notebook"
 style "notebook-button" {
     xthickness		= 0
     ythickness		= 0
-	bg[ACTIVE]		= shade (0.68, @sidebar_background)
-    bg[PRELIGHT]    = shade (0.75, @sidebar_background)
-	engine "murrine"
-	{
-		gradient_shades		= {1.00,1.00,1.00,1.00}
-		contrast        	= 0.6
-		roundness       	= 0
-	}
+    bg[ACTIVE]		= shade (0.68, @sidebar_background)
+    bg[PRELIGHT]        = shade (0.75, @sidebar_background)
+    engine "murrine" {
+	gradient_shades		= {1.00,1.00,1.00,1.00}
+	contrast        	= 0.6
+	roundness       	= 0
+    }
 }
 
-class "*TerminalWindow"										style "terminal"
-widget_class "TerminalWindow*GtkNotebook"					style "terminal-notebook"
+class "*TerminalWindow"					style "terminal"
+widget_class "TerminalWindow*GtkNotebook"		style "terminal-notebook"
 widget_class "TerminalWindow*<GtkNotebook>*<GtkLabel>" 	style "terminal-notebook"
-widget_class "TerminalWindow*<GtkNotebook>*<GtkButton>" 	style "notebook-button"
-# widget "*TerminalWindow.*.GtkVScrollbar"					style "terminal-scrollbar"
-
-
+widget_class "TerminalWindow*<GtkNotebook>*<GtkButton>" style "notebook-button"
+# widget "*TerminalWindow.*.GtkVScrollbar"		style "terminal-scrollbar"
