@@ -22,8 +22,8 @@ GNU/Emacs 24, any Qt4-based application, Firefox/Iceweasel, Chrome/Chromium,
 and much, much more.
 
 Luckily (and this is the beauty of Free Software!), the original code is
-released under the GLPv3 license, which allows us to continue the work where
-it was left off, with improvements and adaptations to suite everyone better.
+released under the GPLv3 license, which allows us to continue the work where
+it was left off, with improvements and adaptations to suit everyone better.
 In essence, Free Software is a "live entity".
 
 # But, why bother with this particular family of themes?
