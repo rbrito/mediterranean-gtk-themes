@@ -26,6 +26,27 @@ released under the GPLv3 license, which allows us to continue the work where
 it was left off, with improvements and adaptations to suit everyone better.
 In essence, Free Software is a "live entity".
 
+## Requirements
+
+A stock installation of GTK3 will mostly be sufficient for using this theme.
+On the other hand, the GTK2 part of it is heavily based on the
+[Murrine theme engine][3] and if you use GTK2 by any means (see above for
+indirecty uses of GTK2), then you will have a layout that is totally
+unintended by the authors.
+
+[3]: http://gnome-look.org/content/show.php?content=42755
+
+In a Debian-based distritribution (like Ubuntu or Linux Mint), you should
+install the [`gtk2-engines-murrine`][4] package:
+
+    apt-get install gtk2-engines-murrine
+
+To make things easier, we expect to offer precompiled packages in an easy
+way (but you can generate yours yourself from the `debian` branch of this
+repository, if you don't want to wait).
+
+[4]: https://packages.debian.org/sid/gtk2-engines-murrine
+
 # But, why bother with this particular family of themes?
 
 Glad that you asked. It is an unfortunate fact that there is a scarcity of
