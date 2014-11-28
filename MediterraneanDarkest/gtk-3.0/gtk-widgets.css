@@ -2266,7 +2266,7 @@ GtkCalendar.button {
     border-width: 0px;
     padding: 0px;
 
-    color: @theme_base_color;
+    color: @fg_color;
 }
 
 .menuitem GtkCalendar {
@@ -3497,4 +3497,3 @@ GtkProgressBar.osd.progressbar {
                   alpha(black, 0.13)
                   alpha(black, 0.13);
 }
-
