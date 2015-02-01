@@ -914,4 +914,3 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 include "apps/thunar.rc"		# thunar especific
 include "apps/terminal.rc"
 include "apps/gmusicbrowser.rc"
-
