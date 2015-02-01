@@ -59,12 +59,16 @@
     background-origin: border-box;
     background-clip: padding-box;
     border-width: 0px;
-
+    background-color: transparent;
 }
 
 /***************
  * Base States *
  ***************/
+
+GtkWindow {
+    color: @theme_fg_color;
+}
 
 .background {
     color: @theme_fg_color;
@@ -73,22 +77,6 @@
 
 .background:backdrop {
 
-}
-/*
-GtkGrid,
-GtkAlignment,
-GtkAspectFrame,
-GtkButtonBox,
-GtkFixed,
-GtkPaned,
-GtkLayout,
-GtkNotebook,
-GtkExpander,
-GtkOverlay,
-GtkBox
-*/
-GtkOrientable {
-    background-color: @theme_bg_color;
 }
 
 /* FIXME: why do we still need this? */
