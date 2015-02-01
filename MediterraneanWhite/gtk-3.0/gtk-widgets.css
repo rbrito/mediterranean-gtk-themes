@@ -2254,7 +2254,7 @@ GtkCalendar.button {
     border-width: 0px;
     padding: 0px;
 
-    color: @theme_base_color;
+    color: @text_color;
 }
 
 .menuitem GtkCalendar {
