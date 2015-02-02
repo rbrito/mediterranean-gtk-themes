@@ -53,5 +53,3 @@
 	color: shade(@theme_text_color, 1.00);
 	text-shadow: 1px 1px @theme_shadow_color;
 }
-
-

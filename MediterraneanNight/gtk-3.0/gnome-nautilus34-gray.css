@@ -191,4 +191,3 @@ NautilusWindow .pane-separator {
 NautilusWindow > GtkTable > .pane-separator:hover {
     background-color: shade (@theme_bg_dark_color, 1.00);
 }
-

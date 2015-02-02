@@ -111,5 +111,3 @@ tabs-themed para los temas oscuros:
 @import url("tabs-classic.css");
 
 (ten cuidado de dejar solo UNA de las cinco anteriores)
-
-

@@ -76,4 +76,3 @@ RemminaMain .toolbar {
     border-bottom-color:  shade(@theme_bg_dark_color, 0.73);
 	border-image: none;
 }
-

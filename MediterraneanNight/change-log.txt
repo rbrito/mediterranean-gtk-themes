@@ -212,5 +212,3 @@ Version 1.03 (2012-03-10)
 - Adjusting the color of the nautilus cluebar (search, emptying trash, ...)
 - Modification of the default metacity theme (glassy buttons remain as an option, see readme.txt)
 - MediterraneanLight: color correction of menu text (was too bright)
-
-
