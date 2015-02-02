@@ -109,5 +109,3 @@ or
 @import url("tabs-classic.css");
 
 (Be careful to leave only ONE of the five)
-
-

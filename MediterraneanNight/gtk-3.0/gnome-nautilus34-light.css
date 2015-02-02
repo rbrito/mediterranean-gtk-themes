@@ -210,4 +210,3 @@ NautilusWindow .pane-separator {
                                     color-stop (0.50, @sidebar_background),
                                     to   (shade(@theme_bg_color, 0.70)));
 }
-

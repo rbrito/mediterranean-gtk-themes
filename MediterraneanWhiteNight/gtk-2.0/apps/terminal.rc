@@ -55,5 +55,3 @@ widget_class "TerminalWindow*GtkNotebook"					style "terminal-notebook"
 widget_class "TerminalWindow*<GtkNotebook>*<GtkLabel>" 	style "terminal-notebook"
 widget_class "TerminalWindow*<GtkNotebook>*<GtkButton>" 	style "notebook-button"
 # widget "*TerminalWindow.*.GtkVScrollbar"					style "terminal-scrollbar"
-
-
