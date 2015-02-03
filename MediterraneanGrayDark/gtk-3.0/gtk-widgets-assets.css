@@ -233,7 +233,6 @@ GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-down-insensitive-dark.png");
 }
 
-
 GtkScale.scale-has-marks-below.slider.vertical {
     background-image: url("assets/scale-slider-right-dark.png");
 }
@@ -257,7 +256,6 @@ GtkSwitch {
 .primary-toolbar.toolbar GtkSwitch.trough,
 GtkSwitch.trough,
 GtkSwitch.trough:backdrop {
-
     border: none;
     border-image: none;
     background: none;

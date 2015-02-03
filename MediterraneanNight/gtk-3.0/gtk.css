@@ -131,7 +131,6 @@
 @define-color toolbar_fg_color shade(@theme_fg_dark_color, 1.00);
 @define-color toolbar_shadow_color @theme_shadow_dark_color;
 @define-color toolbar_border_color @theme_button_border_dark;
-
 @define-color toolbar_active_button_color #909081;
 
 @define-color nautilus_cluebar_color shade(@sidebar_background, 1.00);

@@ -34,10 +34,8 @@
 @define-color theme_entry_border_dark @theme_button_border_dark;
 @define-color theme_path_bg_color shade(@theme_bg_dark_color, 0.90);
 @define-color theme_path_active_color shade(@theme_bg_dark_color, 0.78);
-
 @define-color theme_tab_dark_active1 shade(@theme_bg_dark_color, 0.75);
 @define-color theme_tab_dark_active2 shade(@theme_tab_dark_active1, 1.45);
-
 @define-color theme_mdi_border_color shade(@theme_bg_dark_color, 0.75);
 
 @define-color menu_bg_dark_color shade(@theme_bg_dark_color, 0.88);

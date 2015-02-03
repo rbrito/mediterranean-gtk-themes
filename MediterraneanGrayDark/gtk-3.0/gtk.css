@@ -133,7 +133,6 @@
 @define-color toolbar_shadow_color @theme_shadow_dark_color;
 @define-color toolbar_border_color @theme_button_border_dark;
 
-
 @define-color nautilus_cluebar_color shade(@sidebar_background, 1.00);
 @define-color treeview_focus_border  @nautilus_cluebar_color;
 
