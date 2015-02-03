@@ -4,9 +4,9 @@
 @define-color text_color #161616;
 @define-color fg_color #242424;
 @define-color selected_bg_color #4a6787;
-@define-color selected_fg_color #ffffff;
+@define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #040404;
-@define-color tooltip_fg_color #ffffff;
+@define-color tooltip_fg_color #fff;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_base_color @base_color;
@@ -14,7 +14,7 @@
 @define-color theme_text_color @text_color;
 @define-color theme_fg_color @fg_color;
 @define-color theme_shadow_color alpha(#fff, 0.15);
-@define-color theme_selected_bg_color  #4a6787;
+@define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_selected_shadow_color alpha(#000, 0.18);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
@@ -131,7 +131,6 @@
 @define-color toolbar_fg_color shade(@theme_fg_dark_color, 1.00);
 @define-color toolbar_shadow_color @theme_shadow_dark_color;
 @define-color toolbar_border_color @theme_button_border_dark;
-
 @define-color toolbar_active_button_color #909081;
 
 @define-color nautilus_cluebar_color shade(@sidebar_background, 1.00);
@@ -145,7 +144,7 @@
 /*******
  * OSD *
  *******/
-@define-color osd_highlight #ffffff;
+@define-color osd_highlight #fff;
 @define-color osd_lowlight #525252;
 @define-color osd_base #212526;
 
@@ -195,8 +194,8 @@
 @define-color osd_trough_bg alpha(@osd_button_fg, 0.10);
 
 /* Metacity ¡No modificar! */
-@define-color wm_highlight #ffffff;
-@define-color wm_title_highlight #ffffff;
+@define-color wm_highlight #fff;
+@define-color wm_title_highlight #fff;
 
 @define-color wm_bg_a shade (@bg_color, 1.1);
 @define-color wm_bg_b @bg_color;

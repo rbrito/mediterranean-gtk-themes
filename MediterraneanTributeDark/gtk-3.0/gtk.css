@@ -6,7 +6,7 @@
 @define-color selected_bg_color #496490;
 @define-color selected_fg_color #f3f3f3;
 @define-color tooltip_bg_color #040404;
-@define-color tooltip_fg_color #ffffff;
+@define-color tooltip_fg_color #fff;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_base_color @base_color;
@@ -16,7 +16,7 @@
 @define-color theme_shadow_color alpha(#000, 0.23);
 /* @define-color theme_selected_bg_color mix(shade(#f3bb53, 0.70), @theme_bg_color, 0.20); */
 /*@define-color theme_selected_bg_color shade(#dc8d1b, 0.80);*/
-@define-color theme_selected_bg_color #496490;
+@define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_selected_shadow_color alpha(#000, 0.16);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
@@ -147,7 +147,7 @@
 /*******
  * OSD *
  *******/
-@define-color osd_highlight #ffffff;
+@define-color osd_highlight #fff;
 @define-color osd_lowlight #525252;
 @define-color osd_base #212526;
 
@@ -197,8 +197,8 @@
 @define-color osd_trough_bg alpha(@osd_button_fg, 0.10);
 
 /* Metacity ¡No modificar! */
-@define-color wm_highlight #ffffff;
-@define-color wm_title_highlight #ffffff;
+@define-color wm_highlight #fff;
+@define-color wm_title_highlight #fff;
 
 @define-color wm_bg_a shade (@bg_color, 1.1);
 @define-color wm_bg_b @bg_color;

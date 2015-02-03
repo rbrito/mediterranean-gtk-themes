@@ -6,15 +6,15 @@
 @define-color selected_bg_color #496490;
 @define-color selected_fg_color #ebebeb;
 @define-color tooltip_bg_color #343434;
-@define-color tooltip_fg_color #ffffff;
+@define-color tooltip_fg_color #fff;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
-@define-color theme_base_color #2a2a2a;
-@define-color theme_bg_color #383838;
-@define-color theme_text_color #dddddd;
-@define-color theme_fg_color #c0c0c0;
+@define-color theme_base_color @base_color;
+@define-color theme_bg_color @bg_color;
+@define-color theme_text_color @text_color;
+@define-color theme_fg_color @fg_color;
 @define-color theme_shadow_color alpha(#000, 0.22);
-@define-color theme_selected_bg_color #496490;
+@define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_selected_shadow_color alpha(#000, 0.20);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
@@ -26,7 +26,7 @@
 
 /*************************[Mediterranean-GrayDark]***************************/
 @define-color theme_bg_dark_color #d0d0d0;
-@define-color theme_fg_dark_color #383838;
+@define-color theme_fg_dark_color @theme_bg_color;
 @define-color theme_text_dark_color #303030;
 @define-color theme_shadow_dark_color alpha(#fff, 0.25);
 @define-color theme_highlight_color alpha(#fff, 0.22);
@@ -133,7 +133,6 @@
 @define-color toolbar_shadow_color @theme_shadow_dark_color;
 @define-color toolbar_border_color @theme_button_border_dark;
 
-
 @define-color nautilus_cluebar_color shade(@sidebar_background, 1.00);
 @define-color treeview_focus_border  @nautilus_cluebar_color;
 
@@ -145,7 +144,7 @@
 /*******
  * OSD *
  *******/
-@define-color osd_highlight #ffffff;
+@define-color osd_highlight #fff;
 @define-color osd_lowlight #525252;
 @define-color osd_base #212526;
 
@@ -195,8 +194,8 @@
 @define-color osd_trough_bg alpha(@osd_button_fg, 0.10);
 
 /* Metacity ¡No modificar! */
-@define-color wm_highlight #ffffff;
-@define-color wm_title_highlight #ffffff;
+@define-color wm_highlight #fff;
+@define-color wm_title_highlight #fff;
 
 @define-color wm_bg_a shade (@theme_bg_color, 1.1);
 @define-color wm_bg_b @theme_bg_color;
