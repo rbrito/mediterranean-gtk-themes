@@ -27,7 +27,7 @@
 @define-color menu_shadow_color alpha(#fff, 0.20);
 
 /**********************[Mediterranean-Night-Darkest]***********************/
-/* @define-color theme_bg_dark_color #4D6E92; */
+/* @define-color theme_bg_dark_color #4d6e92; */
 /* @define-color theme_bg_dark_color shade(#354a5d, 1.00); */
 @define-color theme_bg_dark_color #4f5e76;
 @define-color theme_fg_dark_color #dfdfdf;
@@ -91,9 +91,9 @@
 @define-color focused_dark_entry_border mix(@theme_selected_bg_color, @theme_bg_color, 0.40);
 @define-color focused_dark_entry_outer  alpha(shade(@theme_selected_bg_color, 1.70), 0.65);
 
-/* @define-color sidebar_background shade(#E1E5E8, 0.24); */
+/* @define-color sidebar_background shade(#e1e5e8, 0.24); */
 @define-color sidebar_background #313233;
-@define-color sidebar_icon       shade(#E1E5E8, 0.70);
+@define-color sidebar_icon       shade(#e1e5e8, 0.70);
 @define-color sidebar_selected_bg shade(@theme_selected_bg_color, 1.00);
 @define-color sidebar_fg_color @theme_fg_color;
 

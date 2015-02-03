@@ -88,7 +88,7 @@
 
 @define-color focused_entry_inset alpha (#d7e4f1, 0.50);
 
-/* @define-color sidebar_background shade(#E1E5E8, 0.95); */
+/* @define-color sidebar_background shade(#e1e5e8, 0.95); */
 @define-color sidebar_background shade(mix(@theme_bg_color, #afb8bf, 0.35), 1.03);
 @define-color sidebar_icon       shade(@sidebar_background, 0.60);
 @define-color sidebar_selected_bg shade(@theme_selected_bg_color,0.90);

@@ -1,9 +1,9 @@
 /* Default color scheme */
-@define-color base_color #FCFCFC;
-@define-color bg_color #EAEAEA;
+@define-color base_color #fcfcfc;
+@define-color bg_color #eaeaea;
 @define-color text_color #282828;
 @define-color fg_color #323232;
-@define-color selected_bg_color #4D6E92;
+@define-color selected_bg_color #4d6e92;
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #040404;
 @define-color tooltip_fg_color #fff;
@@ -27,7 +27,7 @@
 /*************************[Mediterranean-Night]***************************/
 @define-color theme_bg_dark_color #626262;
 @define-color theme_fg_dark_color #e4e4e4;
-@define-color theme_text_dark_color #F5F5F5;
+@define-color theme_text_dark_color #f5f5f5;
 @define-color theme_shadow_dark_color alpha(#000, 0.20);
 @define-color theme_highlight_color alpha(#fff, 0.08);
 @define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.75);
@@ -87,9 +87,9 @@
 @define-color focused_dark_entry_outer alpha(mix(@theme_selected_bg_color, #37d, 0.60), 0.80);
 
 
-/* @define-color sidebar_background shade(#E1E5E8, 0.95); */
+/* @define-color sidebar_background shade(#e1e5e8, 0.95); */
 @define-color sidebar_background #d5dade;
-@define-color sidebar_icon       shade(#E1E5E8, 0.55);
+@define-color sidebar_icon       shade(#e1e5e8, 0.55);
 @define-color sidebar_selected_bg shade(@theme_selected_bg_color,0.90);
 @define-color sidebar_fg_color @theme_text_color;
 
