@@ -1,9 +1,9 @@
 /* Default color scheme */
-@define-color base_color #FCFCFC;
-@define-color bg_color #EAEAEA;
+@define-color base_color #fcfcfc;
+@define-color bg_color #eaeaea;
 @define-color text_color #282828;
 @define-color fg_color #323232;
-@define-color selected_bg_color #4D6E92;
+@define-color selected_bg_color #4d6e92;
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #040404;
 @define-color tooltip_fg_color #fff;
@@ -88,9 +88,9 @@
 
 @define-color focused_entry_inset alpha (#d7e4f1, 0.50);
 
-/* @define-color sidebar_background shade(#E1E5E8, 0.95); */
+/* @define-color sidebar_background shade(#e1e5e8, 0.95); */
 @define-color sidebar_background #d5dade;
-@define-color sidebar_icon       shade(#E1E5E8, 0.55);
+@define-color sidebar_icon       shade(#e1e5e8, 0.55);
 @define-color sidebar_selected_bg shade(@theme_selected_bg_color,0.90);
 @define-color sidebar_fg_color @theme_text_color;
 

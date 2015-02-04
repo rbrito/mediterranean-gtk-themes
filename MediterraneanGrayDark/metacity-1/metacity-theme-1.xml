@@ -76,15 +76,15 @@
 </draw_ops>
 
 <draw_ops name="maxed_border">
-	<line color="shade/#D0D0D0/1.07" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/#D0D0D0/1.00" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/#d0d0d0/1.07" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="shade/#d0d0d0/1.00" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
 <draw_ops name="titlebar_gradient">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#D0D0D0/1.07"/>
-		<color value="shade/#D0D0D0/1.00"/>
+		<color value="shade/#d0d0d0/1.07"/>
+		<color value="shade/#d0d0d0/1.00"/>
 	</gradient>
     <image filename="metacity-noise.png" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
@@ -92,11 +92,11 @@
 <!-- ::: TITLEBAR DIALOG ::: -->
 <draw_ops name="titlebar_dialog">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#D0D0D0/1.07"/>
-		<color value="shade/#D0D0D0/0.95"/>
+		<color value="shade/#d0d0d0/1.07"/>
+		<color value="shade/#d0d0d0/0.95"/>
 	</gradient>
     <image filename="metacity-noise.png" x="0" y="0" width="object_width" height="object_height"/>
-    <line color="shade/#D0D0D0/0.70" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/>
+    <line color="shade/#d0d0d0/0.70" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_maximized">
@@ -118,13 +118,13 @@
 
 <draw_ops name="titlebar_shaded">
 	<include name="border"/>
-	<line color="shade/#D0D0D0/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/#d0d0d0/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="round_titlebar_shaded">
 	<include name="border"/>
 	<include name="corners_outline"/>
-	<line color="shade/#D0D0D0/0.66" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
+	<line color="shade/#d0d0d0/0.66" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLES ::: -->
