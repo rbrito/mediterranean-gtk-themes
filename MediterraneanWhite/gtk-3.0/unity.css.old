@@ -1,0 +1,89 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 28px 0 0 0;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.78);
+    -UnityDecoration-active-shadow-radius: 15px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 10px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: rgb (221, 72, 20);
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+    border: 0px solid rgba (110, 27, 0, 0.04);
+    border-bottom-width: 0;
+    border-radius: 8px 8px 0 0;
+
+    box-shadow: inset 0 0 transparent, inset 0 0 transparent,
+                inset 0 1px shade (#edebe6, 1.065), inset 0 0 transparent;
+
+    text-shadow: 0px 1px @theme_shadow_dark_color;
+
+    background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@theme_bg_dark_color, 1.08)),
+                                     to   (shade(@theme_bg_dark_color, 1.00)));
+    padding: 1px 6px 0 5px;
+}
+
+UnityDecoration.top:backdrop {
+    text-shadow: none;
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-color: shade (@bg_color, 0.7);
+    background-size: 1px 70px;
+    background-repeat: repeat-x;
+
+    start color: mix of the top border color and bg-image gradient end
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     color-stop (0, #a89686),
+                                     color-stop (0.5, #a89686),
+                                     color-stop (1, shade (@bg_color, 0.7)));
+}
+
+
+UnityDecoration.bottom {
+    background-image: none;
+    border-style: none;
+    border-width: 0 0 0 0;
+}
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+
+    background-image: url("assets/background-noise-toolbar.png"),
+					  -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@theme_bg_dark_color, 1.08)),
+                                     to   (shade(@theme_bg_dark_color, 1.00)));
+
+    border-width: 0px;
+	border-style: none;
+
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+    color:				@theme_fg_dark_color;
+	text-shadow: 		0px 1px @theme_shadow_dark_color;
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 0px;
+
+    /* icon-shadow: 0 1 shade (@theme_bg_dark_color, 1.06); */
+}

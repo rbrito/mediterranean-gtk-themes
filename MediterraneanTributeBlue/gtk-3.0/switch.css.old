@@ -1,0 +1,135 @@
+/*************
+ * GtkSwitch *
+ *************/
+
+GtkSwitch {
+    font: bold condensed 10;
+}
+
+GtkSwitch.trough {
+
+    /* color: shade (@internal_element_color, 0.60); */
+	color: shade(@theme_fg_color, 1.10);
+	padding: 2px;
+
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@trough_bg_color_a, 0.95)),
+                                     to   (shade(@trough_bg_color_b, 1.00)));
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 10px;
+	border-image: none;
+    border-top-color: 		shade(@button_border, 0.75);
+    border-right-color: 	shade(@button_border, 0.96);
+    border-left-color: 		shade(@button_border, 0.96);
+    border-bottom-color: 	shade(@button_border, 1.06);
+
+    box-shadow: inset  0px  3px alpha(#000, 0.02),
+				inset  0px  2px alpha(#000, 0.03),
+				inset  0px  1px alpha(#000, 0.04),
+                inset  2px  0px alpha(#000, 0.02),
+                inset  1px  0px alpha(#000, 0.03),
+                inset -2px  0px alpha(#000, 0.02),
+                inset -1px  0px alpha(#000, 0.03);
+
+}
+
+GtkSwitch.trough:active {
+	color: #fff;
+	text-shadow: 1px 1px alpha(#000, 0.30);
+
+	background-image: -gtk-gradient (linear,
+                                    left top, left bottom,
+                                    from (shade(mix(@theme_selected_bg_color, @theme_bg_color, 0.32), 0.75)),
+									color-stop (0.40, shade(mix(@theme_selected_bg_color, @theme_bg_color, 0.32), 0.90)),
+									to   (shade(mix(@theme_selected_bg_color, @theme_bg_color, 0.32), 1.00)));
+
+    border-top-color: 		shade(mix (@theme_selected_bg_color, @theme_bg_color, 0.35), 0.60);
+    border-right-color: 	shade(mix (@theme_selected_bg_color, @theme_bg_color, 0.35), 0.70);
+    border-left-color: 		shade(mix (@theme_selected_bg_color, @theme_bg_color, 0.35), 0.70);
+    border-bottom-color: 	shade(mix (@theme_selected_bg_color, @theme_bg_color, 0.35), 0.80);
+
+    box-shadow: inset  0px  3px alpha(#000, 0.02),
+				inset  0px  2px alpha(#000, 0.03),
+				inset  0px  1px alpha(#000, 0.04),
+                inset  2px  0px alpha(#000, 0.02),
+                inset  1px  0px alpha(#000, 0.04),
+                inset -2px  0px alpha(#000, 0.02),
+                inset -1px  0px alpha(#000, 0.04);
+
+
+}
+
+GtkSwitch.trough:insensitive {
+    background-image: none;
+    background-color: shade (@theme_bg_color, 0.9);
+
+    border-image: none;
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+.primary-toolbar .toolbar GtkSwitch.trough:insensitive,
+.primary-toolbar.toolbar GtkSwitch.trough:insensitive,
+.primary-toolbar .toolbar GtkSwitch.trough:active,
+.primary-toolbar.toolbar GtkSwitch.trough:active,
+.primary-toolbar .toolbar GtkSwitch.trough,
+.primary-toolbar.toolbar GtkSwitch.trough {
+
+    border-top-color: 		shade(@theme_button_border_dark, 0.88);
+    border-right-color: 	shade(@theme_button_border_dark, 0.96);
+    border-left-color: 		shade(@theme_button_border_dark, 0.96);
+    border-bottom-color: 	shade(@theme_button_border_dark, 1.04);
+
+}
+
+GtkSwitch.slider {
+    padding: 0px;
+
+	border-width: 1px;
+    /*border-radius: 3px 0px 0px 3px; */
+    border-radius: 10px;
+    border-top-color: 		shade(@button_border, 1.06);
+    border-right-color: 	shade(@button_border, 0.97);
+    border-left-color: 		shade(@button_border, 0.97);
+    border-bottom-color: 	shade(@button_border, 0.90);
+
+    box-shadow: inset  0px  1px alpha(#fff, 0.09),
+                inset  1px  0px alpha(#fff, 0.07),
+                inset -1px  0px alpha(#fff, 0.07),
+                inset  0px -1px alpha(#fff, 0.05);
+}
+
+GtkSwitch.slider:active {
+    /* border-color:  shade(@button_border, 0.80); */
+    /* border-radius: 0px 3px 3px 0px; */
+    border-left-color: 		shade(@button_border, 0.70);
+}
+
+GtkSwitch.slider:insensitive {
+    background-image: none;
+    background-color: @insensitive_bg_color;
+}
+
+.primary-toolbar .toolbar GtkSwitch.slider,
+.primary-toolbar.toolbar GtkSwitch.slider {
+   background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@button_raised_gradient_color_a, 1.00)),
+                                     color-stop (0.48, shade(@button_raised_gradient_color_a, 0.97)),
+                                     color-stop (0.52, shade(@button_raised_gradient_color_a, 0.94)),
+                                     to (shade(@button_raised_gradient_color_a, 0.91)));
+
+    border-top-color: 		shade(@theme_button_border_dark, 1.04);
+    border-right-color: 	shade(@theme_button_border_dark, 0.96);
+    border-left-color: 		shade(@theme_button_border_dark, 0.96);
+    border-bottom-color: 	shade(@theme_button_border_dark, 0.90);
+
+    box-shadow: inset  0px  1px alpha(#fff, 0.07),
+                inset  1px  0px alpha(#fff, 0.06),
+                inset -1px  0px alpha(#fff, 0.06),
+                inset  0px -1px alpha(#fff, 0.05);
+
+}
