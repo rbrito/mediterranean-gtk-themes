@@ -1,1 +1,41 @@
 @import url("scrollbar.css.common");
+
+.scrollbar {
+    -GtkRange-slider-width: 9;
+    -GtkRange-stepper-size: 0;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-border: 2;
+
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
+
+    -GtkScrollbar-min-slider-length: 30;
+}
+
+.scrollbar.slider,
+.scrollbar.button {
+    border-width: 1px;
+    border-radius: 10px;
+	border-style: solid;
+	border-color: alpha (#eee, 0.00);
+	background-color:         alpha (#eee, 0.25);
+}
+
+.scrollbar.slider:prelight {
+}
+
+.scrollbar.slider.vertical:prelight {
+	background-color:         alpha (#eee, 0.42);
+	border-color: @base_color;
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade(@theme_fg_color, 0.90)),
+                                     to   (shade(@theme_fg_color, 0.55)));
+}
+
+.scrollbar.slider.horizontal:prelight {
+	background-color:         alpha (#eee, 0.42);
+	border-color: @base_color;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade(@theme_fg_color, 0.90)),
+                                     to   (shade(@theme_fg_color, 0.55)));
+}

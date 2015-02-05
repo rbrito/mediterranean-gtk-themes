@@ -1,1 +1,32 @@
 @import url("menu-tribute.css.common");
+
+.toolbar .raised .menu,
+.menu {
+	/* menu contextual */
+    background-image: none;
+    background-color: @menu_bg_dark_color;
+
+	background-image:  url("assets/background-noise-toolbar.png"),
+                       -gtk-gradient (radial,
+                                       1.00 0.50, 0.30,
+       								   0.50 0.00, 1.10,
+									   from (shade(@menu_bg_dark_color, 1.10)),
+       								   to   (shade(@menu_bg_dark_color, 0.98)));
+    background-repeat: repeat;
+    background-position: top left;
+
+/*
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@menu_bg_dark_color, 1.03)),
+                                     to   (shade(@menu_bg_dark_color, 0.97)));
+*/
+    padding: 5px 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0px;
+
+	border-color: shade(@menu_bg_dark_color, 0.97);
+	border-image: 	none;
+}
+

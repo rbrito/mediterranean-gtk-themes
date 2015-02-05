@@ -1,1 +1,26 @@
 @import url("tabs-themed-dark.css.common");
+
+.notebook tab {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@theme_tab_bg_color, 1.10)),
+                                     color-stop (0.40, shade(@theme_tab_bg_color, 1.06)),
+                                     color-stop (0.60, shade(@theme_tab_bg_color, 0.95)),
+                                     to (shade(@theme_tab_bg_color, 0.91)));
+
+    border-width: 1px;
+    border-style: solid;
+	border-radius: 0px;
+	border-color:       shade(@button_border_active, 1.15);
+
+    border-top-color: 	shade(@button_border_active, 1.00);
+    border-left-color: 	shade(@button_border_active, 1.30);
+    border-right-color: shade(@button_border_active, 1.30);
+
+	border-image: none;
+
+    box-shadow: inset  0px  1px alpha(#eee, 0.1),
+                inset  1px  0px alpha(#eee, 0.1),
+                inset -1px  0px alpha(#eee, 0.1);
+}
+
