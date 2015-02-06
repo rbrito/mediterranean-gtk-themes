@@ -1,9 +1,1 @@
 @import url("gtk-widgets.css.common");
-
-.menuitem GtkCalendar,
-.menuitem GtkCalendar.button,
-.menuitem GtkCalendar.header,
-.menuitem GtkCalendar.view {
-    color: @text_color;
-}
-

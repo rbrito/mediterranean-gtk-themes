@@ -138,6 +138,8 @@
 
 @define-color calc_display_fg_color shade(@theme_text_dark_color, 1.00);
 
+@define-color calendar_text_color @theme_base_color;
+
 @define-color expander_row_selected_color #FFF;
 @define-color test #f00;
 

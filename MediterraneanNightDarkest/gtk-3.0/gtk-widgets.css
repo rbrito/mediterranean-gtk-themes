@@ -146,10 +146,3 @@
 .window-frame:backdrop {
     box-shadow: 0 2px 5px 1px @theme_shadow_dark_color;
 }
-
-.menuitem GtkCalendar,
-.menuitem GtkCalendar.button,
-.menuitem GtkCalendar.header,
-.menuitem GtkCalendar.view {
-    color: @theme_base_color;
-}
