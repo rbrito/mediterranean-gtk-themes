@@ -143,6 +143,9 @@
 
 @define-color calendar_text_color @text_color;
 
+@define-color menu_tribute_color1 shade(@menu_bg_dark_color, 1.15);
+@define-color menu_tribute_color2 shade(@menu_bg_dark_color, 0.95);
+
 @define-color expander_row_selected_color #FFF;
 @define-color test #f00;
 

@@ -1,13 +1,1 @@
 @import url("menu-tribute.css.common");
-
-.toolbar .raised .menu,
-.menu {
-	/* menu contextual */
-	background-image:  url("assets/background-noise-toolbar.png"),
-                       -gtk-gradient (radial,
-                                       1.00 0.50, 0.30,
-       								   0.50 0.00, 1.10,
-									   from (shade(@menu_bg_dark_color, 1.15)),
-       								   to   (shade(@menu_bg_dark_color, 0.95)));
-}
-
