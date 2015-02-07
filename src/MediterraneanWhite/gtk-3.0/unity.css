@@ -48,7 +48,7 @@ UnityDecoration.right {
     background-size: 1px 70px;
     background-repeat: repeat-x;
 
-    start color: mix of the top border color and bg-image gradient end
+/* start color: mix of the top border color and bg-image gradient end */
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      color-stop (0, #a89686),
                                      color-stop (0.5, #a89686),
