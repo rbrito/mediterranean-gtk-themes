@@ -8,4 +8,3 @@
                                      color-stop (0.60, shade(@theme_tab_bg_color, 0.95)),
                                      to (shade(@theme_tab_bg_color, 0.91)));
 }
-
