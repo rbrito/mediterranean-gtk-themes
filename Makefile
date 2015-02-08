@@ -23,4 +23,3 @@ clean:
 	for THEME_FOLDER in $(THEMES); do \
 		rm -rf $${THEME_FOLDER}/gtk-3.0/dist ; \
 	done
-
