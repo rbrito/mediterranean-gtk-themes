@@ -1,0 +1,10 @@
+@import url("tabs-themed-dark.css.common");
+
+.notebook tab {
+    background-image: -gtk-gradient(linear,
+                                     left top, left bottom,
+                                     from(shade($theme_tab_bg_color, 1.10)),
+                                     color-stop(0.40, shade($theme_tab_bg_color, 1.06)),
+                                     color-stop(0.60, shade($theme_tab_bg_color, 0.95)),
+                                     to(shade($theme_tab_bg_color, 0.91)));
+}

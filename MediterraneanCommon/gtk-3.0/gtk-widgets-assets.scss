@@ -1,0 +1,193 @@
+/*************************
+ * Check and Radio items *
+ *************************/
+
+.check,
+.radio,
+.check:active,
+.radio:active,
+.check:insensitive,
+.radio:insensitive {
+    background-color: transparent;
+    border-style: none;
+}
+
+GtkCheckButton:hover,
+GtkCheckButton:active:hover,
+GtkCheckButton:selected,
+GtkCheckButton:selected:focus {
+    background-color: transparent;
+}
+
+.check,
+.check row:selected,
+.check row:selected:focused {
+    background-image: url("../assets/checkbox-unchecked.png");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focused:insensitive {
+    background-image: url("../assets/checkbox-unchecked-insensitive.png");
+    background-color: transparent;
+}
+
+.check:active,
+.check row:selected:active,
+.check row:selected:focused:active {
+    background-image: url("../assets/checkbox-checked.png");
+
+}
+
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focused:active:insensitive {
+    background-image: url("../assets/checkbox-checked-insensitive.png");
+    background-color: transparent;
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focused:inconsistent {
+    background-image: url("../assets/checkbox-mixed.png");
+
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focused:inconsistent:insensitive {
+    background-image: url("../assets/checkbox-mixed-insensitive.png");
+
+}
+
+.radio,
+.radio row:selected,
+.radio row:selected:focused {
+    background-image: url("../assets/radio-unselected.png");
+}
+
+.radio:insensitive,
+.radio row:selected:insensitive,
+.radio row:selected:focused:insensitive {
+    background-image: url("../assets/radio-unselected-insensitive.png");
+}
+
+.radio:active,
+.radio row:selected:active,
+.radio row:selected:focused:active {
+	background-image: url("../assets/radio-selected.png");
+}
+
+.radio:active:insensitive,
+.radio row:selected:active:insensitive,
+.radio row:selected:focused:active:insensitive {
+    background-image: url("../assets/radio-selected-insensitive.png");
+}
+
+.radio:inconsistent,
+.radio row:selected:inconsistent,
+.radio row:selected:focused:inconsistent {
+    background-image: url("../assets/radio-mixed.png");
+
+}
+
+.radio:inconsistent:insensitive,
+.radio row:selected:inconsistent:insensitive,
+.radio row:selected:focused:inconsistent:insensitive {
+    background-image: url("../assets/radio-mixed-insensitive.png");
+    background-color: transparent;
+}
+
+/*
+.sidebar .radio:active,
+.sidebar .radio:active:focused,
+.sidebar .radio:active:prelight {
+    background-image: url("../assets/sidebar-radio-checked.svg");
+}
+
+.sidebar .radio:active,
+.sidebar .radio:active:focused,
+.sidebar .radio:active:prelight {
+    background-image: url("../assets/sidebar-radio-checked.svg");
+}
+
+.sidebar .radio:prelight {
+    background-image: url("../assets/sidebar-radio-prelight.svg");
+}
+
+.sidebar .radio:active:selected,
+.sidebar .radio:active:selected:focused {
+    background-image: url("../assets/sidebar-radio-selected.svg");
+}
+
+.sidebar .radio:selected:prelight,
+.sidebar .radio:selected:focused {
+    background-image: url("../assets/sidebar-radio-selected-prelight.svg");
+}
+
+*/
+.primary-toolbar GtkComboBox.combobox-entry .button,
+GtkComboBox.combobox-entry .button,
+.primary-toolbar GtkComboBox.combobox-entry .button:last-child,
+GtkComboBox.combobox-entry .button:last-child {
+
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
+GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:hover:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:active:last-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:last-child,
+GtkComboBox.combobox-entry .button:active:last-child,
+GtkComboBox.combobox-entry .button:hover:active:last-child {
+
+}
+
+/* for RTL languages */
+.primary-toolbar GtkComboBox.combobox-entry .button:first-child,
+GtkComboBox.combobox-entry .button:first-child {
+
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button:active:first-child,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover:active:first-child,
+GtkComboBox.combobox-entry .button:active:first-child,
+GtkComboBox.combobox-entry .button:hover:active:first-child {
+
+}
+
+GtkScale.trough,
+GtkScale.trough.horizontal {
+
+}
+
+GtkScale.trough.vertical {
+
+}
+
+
+GtkScale.progressbar.horizontal {
+
+}
+
+GtkScale.progressbar.vertical {
+
+}
+
+/**********
+ * switch *
+ **********/
+GtkSwitch {
+    -GtkWidget-focus-line-width: 0;
+    border-radius: 8px;
+    padding: 0;
+}
+
+GtkSwitch.slider {
+    border: none;
+    border-image: none;
+    background: none;
+    color: transparent;
+    box-shadow: none;
+}
