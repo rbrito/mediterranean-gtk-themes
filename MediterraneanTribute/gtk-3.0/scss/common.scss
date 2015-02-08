@@ -1,24 +1,89 @@
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-mdi.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-panel.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/menu-tribute.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-classic.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed-dark.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray-light.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray-light.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gtk-widgets-assets.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/nautilus36.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-dark.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray.scss';
 @import '../../../MediterraneanCommon/gtk-3.0/gtk-widgets.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/scrollbar.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-mono.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-darkest.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-light.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-light.scss';
 @import '../../../MediterraneanCommon/gtk-3.0/menu.scss';
+@import '../../../MediterraneanCommon/gtk-3.0/scrollbar.scss';
 @import '../../../MediterraneanCommon/gtk-3.0/sidebar.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-greeter.scss';
+@import '../../../MediterraneanCommon/gtk-3.0/gtk-widgets-assets.scss';
+@import '../../../MediterraneanCommon/gtk-3.0/gnome-panel.scss';
+
+/* Select style for TABS
+	1.- tabs dark gray (full)
+	@import '../../../MediterraneanCommon/gtk-3.0/tabs-dark.scss';
+
+	2.- tabs themed blue (full)
+	@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed.scss';
+
+	3.- Default theme tabs
+	@import '../../../MediterraneanCommon/gtk-3.0/tabs.scss';
+
+	4.- tabs with dark gray highlight
+	@import '../../../MediterraneanCommon/gtk-3.0/tabs-mono.scss';
+
+	5.- more traditional style tabs
+	@import '../../../MediterraneanCommon/gtk-3.0/tabs-classic.scss';
+
+	(Be careful to leave only ONE of the five,
+	edit the line below according to the style you want)
+*/
+@import '../../../MediterraneanCommon/gtk-3.0/tabs-mono.scss';
+
+/* some gnome-mdi-apps */
+@import '../../../MediterraneanCommon/gtk-3.0/gnome-mdi.scss';
+
+/*
+	There are 2 options for Unity panel:
+
+	If you prefer the dark panel "Unity"
+	------------------------------------
+	@import '../../../MediterraneanCommon/gtk-3.0/unity-darkest.scss';
+
+	If you prefer the default (perfect fit with maximized windows)
+	--------------------------------------------------------------
+	@import '../../../MediterraneanCommon/gtk-3.0/unity.scss';
+
+	(edit the line below according to the style you want)
+-------------------------------------------------------------- */
 @import '../../../MediterraneanCommon/gtk-3.0/unity.scss';
+
+/*
+	There are 7 options for nautilus:
+
+	-----------------------------------
+	 Nautilus 3.6 (default)
+	-----------------------------------
+	Nautilus 3.6.x for gnome-shell 3.6.x or unity
+		@import '../../../MediterraneanCommon/gtk-3.0/nautilus36.scss';
+
+	-----------------------------------
+	 3 for Nautilus 3.4 GNOME-SHELL
+	-----------------------------------
+	1.- nautilus sidebar and pathbar dark gray:
+		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray.scss';
+	OR
+	2.- nautilus sidebar and pathbar light:
+		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-light.scss';
+	OR
+	3.- nautilus sidebar dark gray and pathbar light:
+		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray-light.scss';
+
+	-----------------------------------
+	 3 for Nautilus 3.4 UNITY
+	-----------------------------------
+	1.- nautilus sidebar and pathbar dark gray:
+		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray.scss';
+	OR
+	2.- nautilus sidebar and pathbar light:
+		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-light.scss';
+	OR
+	3.- nautilus sidebar dark gray and pathbar light:
+		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray-light.scss';
+
+
+	(edit the line below according to the style of nautilus you want)
+-------------------------------------------------------------------- */
+@import '../../../MediterraneanCommon/gtk-3.0/nautilus36.scss';
+
+/*
+@import '../../../MediterraneanCommon/gtk-3.0/menu-tribute.scss';
+@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed-dark.scss';
+*/
+
