@@ -6,16 +6,16 @@
  * Symbolic images *
  *******************/
 NautilusWindow .sidebar .image {
-    color: 	$sidebar_icon;
-	icon-shadow: 1px 1px $theme_shadow_color;
+    color:     $sidebar_icon;
+    icon-shadow: 1px 1px $theme_shadow_color;
 }
 
 NautilusWindow .sidebar .image:prelight {
-    color: 	shade($sidebar_icon, 1.10);
+    color:     shade($sidebar_icon, 1.10);
 }
 
 NautilusWindow .primary-toolbar.toolbar {
-	/* search-toolbar */
+    /* search-toolbar */
     background-image: url("../assets/background-noise-toolbar.png"),
                       -gtk-gradient(linear,
                                      left top, left bottom,
@@ -37,7 +37,7 @@ NautilusWindow .primary-toolbar.toolbar {
 
 
 NautilusWindow .toolbar {
-	/* secundary search-toolbar */
+    /* secundary search-toolbar */
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
     padding: 3px 5px;
@@ -110,7 +110,7 @@ NautilusFloatingBar .button {
 }
 
 NautilusWindow .sidebar .scrollbar {
-	-GtkRange-trough-border: 	1;
+    -GtkRange-trough-border:     1;
     -GtkRange-slider-width:     6;
 }
 
@@ -142,7 +142,7 @@ NautilusWindow .pane-separator {
 
 .toolbar.menubar NautilusPathBar.linked .button *,
 .toolbar.menubar NautilusPathBar .button * {
-	color: shade($theme_fg_dark_color, 1.00);
+    color: shade($theme_fg_dark_color, 1.00);
 
 }
 
@@ -150,8 +150,8 @@ NautilusWindow .pane-separator {
 
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
-	color: shade($theme_text_dark_color, 0.95);
-	text-shadow: 1px 1px $theme_shadow_dark_color;
+    color: shade($theme_text_dark_color, 0.95);
+    text-shadow: 1px 1px $theme_shadow_dark_color;
 }
 
 

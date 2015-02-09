@@ -13,7 +13,7 @@ Customization tips:
 
 NOTE:
     - Everything explained here makes reference to folder '../MediterraneanNight', but should apply to the appropriate folder of the theme you want to customize.
-	- Some changes require close and open session after them
+    - Some changes require close and open session after them
 
 
 ---------------------------------
@@ -24,19 +24,19 @@ If you use nautilus 3.6.x not need to change anything in this section, however i
 Edit (gedit) the file ../MediterraneanNight/gtk-3.0/gtk.css
 
 go to the last line of the file, there are seven options for nautilus:
-	If you use nautilus 3.6.x (by default)
-	1.- @import url("nautilus36.css");
+    If you use nautilus 3.6.x (by default)
+    1.- @import url("nautilus36.css");
 
     If you use nautilus 3.4.x
-	(for gnome-shell)
-	2.- "gnome-nautilus34-gray.css"  		(nautilus sidebar and toolbar dark gray)
-	3.- "gnome-nautilus34-light.css" 		(nautilus sidebar and toolbar light)
-	4.- "gnome-nautilus34-gray-light.css" (nautilus sidebar dark gray and toolbar light)
+    (for gnome-shell)
+    2.- "gnome-nautilus34-gray.css"          (nautilus sidebar and toolbar dark gray)
+    3.- "gnome-nautilus34-light.css"         (nautilus sidebar and toolbar light)
+    4.- "gnome-nautilus34-gray-light.css" (nautilus sidebar dark gray and toolbar light)
 
-	(for UNITY)
-	5.- "unity-nautilus34-gray.css"
-	6.- "unity-nautilus34-light.css"
-	7.- "unity-nautilus34-gray-light.css"
+    (for UNITY)
+    5.- "unity-nautilus34-gray.css"
+    6.- "unity-nautilus34-light.css"
+    7.- "unity-nautilus34-gray-light.css"
 
 edit (please carefully) the corresponding line "@import" according to the style of nautilus you want,
 to make it ONE of the seven.

@@ -15,7 +15,7 @@ NOTA:
 
     - Todo lo explicado aqui hace referencia a la carpeta '../MediterraneanNight', pero debe aplicarse en la carpeta correspondiente del tema que quiera personalizar.
 
-	- Algunos cambios requieren cerrar y abrir sesión despues de hacerlos
+    - Algunos cambios requieren cerrar y abrir sesión despues de hacerlos
 
 
 ----------------------------------------
@@ -27,19 +27,19 @@ Editar (gedit) el archivo ../MediterraneanNight/gtk-3.0/gtk.css
 
 Ve a la ultima linea y encontraras 7 opciones para nautilus:
 
-	Si usas Nautilus 3.6.x (opcion por defecto)
-	1.- @import url("nautilus36.css");
+    Si usas Nautilus 3.6.x (opcion por defecto)
+    1.- @import url("nautilus36.css");
 
     Si usas Nautilus 3.4.x
-	(Para gnome-shell)
-	2.- "gnome-nautilus34-gray.css"  		(nautilus sidebar y pathbar gris oscuro)
-	3.- "gnome-nautilus34-light.css" 		(nautilus sidebar azulado y pathbar claro))
-	4.- "gnome-nautilus34-gray-light.css" 	(nautilus sidebar gris oscuro y pathbar claro)
+    (Para gnome-shell)
+    2.- "gnome-nautilus34-gray.css"          (nautilus sidebar y pathbar gris oscuro)
+    3.- "gnome-nautilus34-light.css"         (nautilus sidebar azulado y pathbar claro))
+    4.- "gnome-nautilus34-gray-light.css"     (nautilus sidebar gris oscuro y pathbar claro)
 
-	(para UNITY)
-	5.- "unity-nautilus34-gray.css"  		(nautilus sidebar y pathbar gris oscuro)
-	6.- "unity-nautilus34-light.css" 		(nautilus sidebar azulado y pathbar claro)
-	7.- "unity-nautilus34-gray-light.css" 	(nautilus sidebar gris oscuro y pathbar claro)
+    (para UNITY)
+    5.- "unity-nautilus34-gray.css"          (nautilus sidebar y pathbar gris oscuro)
+    6.- "unity-nautilus34-light.css"         (nautilus sidebar azulado y pathbar claro)
+    7.- "unity-nautilus34-gray-light.css"     (nautilus sidebar gris oscuro y pathbar claro)
 
 modifica la linea "@import" para que se corresponda con el estilo que buscas,
 de forma que quede como una de las siete lineas de abajo.

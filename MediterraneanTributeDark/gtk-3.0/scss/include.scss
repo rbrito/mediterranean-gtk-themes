@@ -7,23 +7,23 @@
 @import "gnome-panel";
 
 /* Select style for TABS
-	1.- tabs dark gray (full)
-	@import "tabs-dark";
+    1.- tabs dark gray (full)
+    @import "tabs-dark";
 
-	2.- tabs themed blue (full)
-	@import "tabs-themed";
+    2.- tabs themed blue (full)
+    @import "tabs-themed";
 
-	3.- Default theme tabs
-	@import "tabs";
+    3.- Default theme tabs
+    @import "tabs";
 
-	4.- tabs with dark gray highlight
-	@import "tabs-mono";
+    4.- tabs with dark gray highlight
+    @import "tabs-mono";
 
-	5.- more traditional style tabs
-	@import "tabs-classic";
+    5.- more traditional style tabs
+    @import "tabs-classic";
 
-	(Be careful to leave only ONE of the five,
-	edit the line below according to the style you want)
+    (Be careful to leave only ONE of the five,
+    edit the line below according to the style you want)
 */
 @import "tabs-mono";
 
@@ -31,54 +31,54 @@
 @import "gnome-mdi";
 
 /*
-	There are 2 options for Unity panel:
+    There are 2 options for Unity panel:
 
-	If you prefer the dark panel "Unity"
-	------------------------------------
-	@import "unity-darkest";
+    If you prefer the dark panel "Unity"
+    ------------------------------------
+    @import "unity-darkest";
 
-	If you prefer the default (perfect fit with maximized windows)
-	--------------------------------------------------------------
-	@import "unity";
+    If you prefer the default (perfect fit with maximized windows)
+    --------------------------------------------------------------
+    @import "unity";
 
-	(edit the line below according to the style you want)
+    (edit the line below according to the style you want)
 -------------------------------------------------------------- */
 @import "unity";
 
 /*
-	There are 7 options for nautilus:
+    There are 7 options for nautilus:
 
-	-----------------------------------
-	 Nautilus 3.6 (default)
-	-----------------------------------
-	Nautilus 3.6.x for gnome-shell 3.6.x or unity
-		@import "nautilus36";
+    -----------------------------------
+     Nautilus 3.6 (default)
+    -----------------------------------
+    Nautilus 3.6.x for gnome-shell 3.6.x or unity
+        @import "nautilus36";
 
-	-----------------------------------
-	 3 for Nautilus 3.4 GNOME-SHELL
-	-----------------------------------
-	1.- nautilus sidebar and pathbar dark gray:
-		@import "gnome-nautilus34-gray";
-	OR
-	2.- nautilus sidebar and pathbar light:
-		@import "gnome-nautilus34-light";
-	OR
-	3.- nautilus sidebar dark gray and pathbar light:
-		@import "gnome-nautilus34-gray-light";
+    -----------------------------------
+     3 for Nautilus 3.4 GNOME-SHELL
+    -----------------------------------
+    1.- nautilus sidebar and pathbar dark gray:
+        @import "gnome-nautilus34-gray";
+    OR
+    2.- nautilus sidebar and pathbar light:
+        @import "gnome-nautilus34-light";
+    OR
+    3.- nautilus sidebar dark gray and pathbar light:
+        @import "gnome-nautilus34-gray-light";
 
-	-----------------------------------
-	 3 for Nautilus 3.4 UNITY
-	-----------------------------------
-	1.- nautilus sidebar and pathbar dark gray:
-		@import "unity-nautilus34-gray";
-	OR
-	2.- nautilus sidebar and pathbar light:
-		@import "unity-nautilus34-light";
-	OR
-	3.- nautilus sidebar dark gray and pathbar light:
-		@import "unity-nautilus34-gray-light";
+    -----------------------------------
+     3 for Nautilus 3.4 UNITY
+    -----------------------------------
+    1.- nautilus sidebar and pathbar dark gray:
+        @import "unity-nautilus34-gray";
+    OR
+    2.- nautilus sidebar and pathbar light:
+        @import "unity-nautilus34-light";
+    OR
+    3.- nautilus sidebar dark gray and pathbar light:
+        @import "unity-nautilus34-gray-light";
 
 
-	(edit the line below according to the style of nautilus you want)
+    (edit the line below according to the style of nautilus you want)
 -------------------------------------------------------------------- */
 @import "nautilus36";
