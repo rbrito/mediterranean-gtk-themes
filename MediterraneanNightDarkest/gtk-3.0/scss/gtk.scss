@@ -40,6 +40,11 @@ $theme_tab_dark_active1: shade($theme_bg_dark_color, 0.80);
 $theme_tab_dark_active2: shade($theme_tab_dark_active1, 1.80);
 $theme_mdi_border_color: shade($theme_bg_dark_color, 0.70);
 
+$theme_unfocused_bg_color: $theme_bg_dark_color;
+
+$borders: $theme_bg_dark_color;
+$unfocused_borders: $theme_bg_dark_color;
+
 $menu_bg_dark_color: shade($theme_bg_dark_color, 0.95);
 $menu_fg_dark_color: shade($theme_fg_dark_color, 1.00);
 $menu_shadow_dark_color: alpha(#000, 0.30);

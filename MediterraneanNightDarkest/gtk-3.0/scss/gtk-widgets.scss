@@ -4,9 +4,11 @@
 .header-bar {
     border-width: 0 0 1px;
     border-style: solid;
-    border-color: shade($borders, 0.90);
+//    border-color: shade($borders, 0.90);
+    border-color: $borders;
     border-radius: 15px 15px 0px 0px;
-    box-shadow: inset 0 -1px shade($borders, 1.30);
+//    box-shadow: inset 0 -1px shade($borders, 1.30);
+    box-shadow: $borders;
     background-color: $theme_bg_dark_color;
 
     padding: 6px 6px 5px 6px;
