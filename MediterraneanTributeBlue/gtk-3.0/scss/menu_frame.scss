@@ -8,8 +8,6 @@ $menu_fg_dark_color: $menu_fg_color;
 $menu_shadow_dark_color: $theme_shadow_color;
 */
 
-
-
 GtkComboBox .menu,
 .toolbar .menu,
 .menu {
@@ -31,7 +29,6 @@ GtkComboBox .menu,
     border-image:     none;
 
 }
-
 
 /*
 GtkTreeMenu.menu,
@@ -239,7 +236,6 @@ DbusmenuGtkMenu .menuitem:hover,
     /* background-color: $menu_bg_color; */
 }
 
-
 .menuitem.check:active,
 .menuitem.radio:active {
     border-width: 0px;
@@ -249,7 +245,6 @@ DbusmenuGtkMenu .menuitem:hover,
     /* contextual menu check */
     color: $theme_fg_color;
 }
-
 
 Genericmenuitem .menuitem.check:active,
 Genericmenuitem .menuitem.radio:active,
@@ -386,7 +381,6 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
                             color-stop(0.25, alpha(#000, 0.05)),
                             color-stop(0.85, alpha(#000, 0.05)),
                             to(alpha(#000, 0.00))) 1;
-
 
 }
 /***************

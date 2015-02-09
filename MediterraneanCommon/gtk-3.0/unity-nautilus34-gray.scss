@@ -53,7 +53,6 @@ NautilusWindow .primary-toolbar.toolbar .button {
     border-image: none;
 }
 
-
 NautilusWindow .primary-toolbar.toolbar .button:hover,
 #nautilus-search-button .button:prelight {
 
@@ -137,7 +136,6 @@ NautilusWindow .sidebar .view:prelight  {
      color:                 $theme_fg_dark_color;
     text-shadow:         0px 1px $theme_shadow_dark_color;
 }
-
 
 NautilusWindow .sidebar .scrollbar {
     -GtkRange-trough-border:     1;

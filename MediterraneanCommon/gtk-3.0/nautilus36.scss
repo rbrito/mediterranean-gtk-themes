@@ -35,7 +35,6 @@ NautilusWindow .primary-toolbar.toolbar {
     -GtkToolbar-button-relief: normal;
 }
 
-
 NautilusWindow .toolbar {
     /* secundary search-toolbar */
     -GtkWidget-window-dragging: true;
@@ -65,7 +64,6 @@ NautilusWindow .primary-toolbar.toolbar .button {
 NautilusWindow .toolbar .button {
     padding: 2px 4px;
 }
-
 
 NautilusToolbar .button {
     icon-shadow: 1px 1px $theme_shadow_color;
@@ -126,7 +124,6 @@ NautilusWindow .sidebar .frame {
     border-style: none;
 }
 
-
 NautilusWindow > GtkTable > .pane-separator,
 NautilusWindow .pane-separator {
     background-color: $sidebar_background;
@@ -146,14 +143,11 @@ NautilusWindow .pane-separator {
 
 }
 
-
-
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
     color: shade($theme_text_dark_color, 0.95);
     text-shadow: 1px 1px $theme_shadow_dark_color;
 }
-
 
 /* Middle toolbar-button */
 .toolbar.menubar NautilusPathBar.linked .button,
@@ -183,7 +177,6 @@ NautilusWindow .pane-separator {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
-
 
 /* Rightmost toolbar-button */
 .toolbar.menubar NautilusPathBar.linked .button:last-child,

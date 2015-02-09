@@ -88,7 +88,6 @@ $entry_bg_dark_color: shade($theme_base_color, 0.88);
 $focused_dark_entry_border: shade(mix($theme_bg_color, $theme_selected_bg_color, 0.50), 0.45);
 $focused_dark_entry_outer: alpha(mix($theme_selected_bg_color, #37d, 0.60), 0.80);
 
-
 /* $sidebar_background: shade(#e1e5e8, 0.95); */
 $sidebar_background: #d5dade;
 $sidebar_icon: shade(#e1e5e8, 0.55);
@@ -120,7 +119,6 @@ $scale_fill: shade($button_bg_active, 1.00);
 $scale_border_a: $internal_element_color;
 $scale_border_b: shade($internal_element_color, 1.25);
 
-
 $progressbar_fill_a: $button_bg_active;
 $progressbar_fill_b: shade(mix($button_bg_active, green, 0.10), 1.10);
 
@@ -128,8 +126,6 @@ $highlighted_border: #8f8f8f;
 $transparent: alpha(#000, 0.0);
 
 $notebook_border: shade($theme_bg_color, 0.75);
-
-
 
 /* $toolbar_gradient_base: shade(mix(#d5dade, $theme_bg_dark_color, 0.75), 0.92); */
 $toolbar_gradient_base: shade($theme_bg_dark_color, 0.97);

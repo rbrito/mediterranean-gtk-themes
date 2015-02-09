@@ -58,7 +58,6 @@ GtkSwitch.trough:active {
                 inset -2px  0px alpha(#000, 0.02),
                 inset -1px  0px alpha(#000, 0.04);
 
-
 }
 
 GtkSwitch.trough:insensitive {
@@ -69,7 +68,6 @@ GtkSwitch.trough:insensitive {
     border-style: none;
     border-radius: 10px;
 }
-
 
 .primary-toolbar .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar.toolbar GtkSwitch.trough:insensitive,

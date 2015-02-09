@@ -6,7 +6,6 @@ GeditPanel
 GeditDocumentsPanel
 */
 
-
 EphyWindow {
     background-image: -gtk-gradient(linear,
                                      left top, left bottom,
@@ -167,7 +166,6 @@ EphyNotebook.notebook tab:active {
                 inset -2px  0px alpha(#000, 0.03),
                 inset -1px  0px alpha(#000, 0.04);
 
-
 }
 
 GeditWindow .notebook tab:first-child,
@@ -207,7 +205,6 @@ TerminalWindow .notebook tab:last-child:active {
     border-right-color: shade($theme_mdi_border_color, 0.88);
 }
 
-
 /*
 GeditWindow .notebook tab:last-child,
 EphyNotebook.notebook tab:last-child,
@@ -236,7 +233,6 @@ GeditWindow.notebook tab GtkLabel {
     text-shadow: 0px 1px $theme_shadow_dark_color;
 }
 
-
 /* gnome-terminal */
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.95;
@@ -244,7 +240,6 @@ TerminalScreen {
     color: $theme_fg_color;
 
 }
-
 
 MathWindow * {
     background-color: transparent;
@@ -269,7 +264,6 @@ MathDisplay GtkTextView.view {
     background-color: shade($theme_bg_dark_color, 1.50);
 
 }
-
 
 MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
     /* Borde del display */
@@ -567,7 +561,6 @@ NemoWindow .sidebar .frame {
 
 }
 
-
 NautilusWindow > GtkTable > .pane-separator,
 NautilusWindow .pane-separator,
 NemoWindow > GtkTable > .pane-separator,
@@ -583,7 +576,6 @@ NemoWindow .pane-separator {
     border-color: $sidebar_background;
     border-image: none;
 }
-
 
 NemoSearchBar,
 NemoSearchBar *,
@@ -708,7 +700,6 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active {
 
 }
 
-
 NemoWindow .primary-toolbar.toolbar .button:hover {
     background-image: -gtk-gradient(linear,
                      left top, left bottom,
@@ -735,7 +726,6 @@ NemoWindow .toolbar .button GtkImage {
 NemoWindow .primary-toolbar.toolbar .button GtkImage {
     color: $theme_fg_dark_color;
 }
-
 
 /* Frame vista iconos nautilus36 */
 NautilusView.frame {
@@ -886,7 +876,6 @@ NemoWindow .notebook tab.top {
     border-radius: 0px;
 }
 
-
 NautilusWindow .notebook tab:first-child,
 NautilusWindow .notebook tab:first-child:active,
 NemoWindow .notebook tab:first-child,
@@ -909,8 +898,6 @@ NemoWindow .notebook tab GtkLabel {
     color: $theme_text_color;
     text-shadow: 0px 1px $theme_shadow_color;
 }
-
-
 
 NautilusWindow .notebook tab .button GtkImage ,
 NemoWindow .notebook tab .button GtkImage {

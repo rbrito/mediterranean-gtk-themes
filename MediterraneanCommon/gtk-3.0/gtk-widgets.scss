@@ -85,11 +85,9 @@ GtkClutterOffscreen {
     color: $theme_fg_color;
 }
 
-
 *:active {
     background-color: alpha(shade($theme_selected_bg_color, 1.90), 0.015);
 }
-
 
 *:hover {
      background-color: alpha(shade($menu_bg_color, 1.05), 0.0);
@@ -97,7 +95,6 @@ GtkClutterOffscreen {
 
 *:hover:insensitive {
 }
-
 
 *:selected,
 *:selected:focus {
@@ -327,7 +324,6 @@ GtkStatusbar {
                 inset  0px -1px $insensitive_border_color;
 }
 
-
 .entry:selected,
 .entry:selected:focused {
     background-color: $theme_selected_bg_color;
@@ -492,7 +488,6 @@ GtkStatusbar {
                 inset -1px  0px alpha(white, 0.10),
                 inset  0px -1px alpha(black, 0.03);
 
-
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
@@ -500,7 +495,6 @@ GtkStatusbar {
     border-left-color:         shade($button_border_active, 0.80);
     border-right-color:     shade($button_border_active, 1.00);
     border-bottom-color:     shade($button_border_active, 0.85);
-
 
     color:             $theme_selected_fg_color;
     text-shadow:  1px 1px $theme_selected_shadow_color;
@@ -570,7 +564,6 @@ GtkLevelBar.vertical {
     padding: 2px;
 }
 
-
 .level-bar.fill-block {
     border-width: 1px;
     border-style: solid;
@@ -588,7 +581,6 @@ GtkLevelBar.vertical {
     padding: 2px;
     border-radius: 2px;
 }
-
 
 .level-bar.indicator-discrete.fill-block.horizontal {
     margin: 0 1px;
@@ -890,7 +882,6 @@ GtkScrolledWindow.frame {
     border-right-color:     alpha(#000, 0.01);
     border-bottom-color:     alpha(#fff, 0.02);
 
-
     box-shadow: inset  0px  4px alpha(#000, 0.02),
                 inset  0px  3px alpha(#000, 0.03),
                 inset  0px  2px alpha(#000, 0.04),
@@ -1001,7 +992,6 @@ GtkComboBox .entry:first-child {
 
 }
 
-
 GtkComboBox .entry:focused {
     border-width: 2px 0px 2px 2px; /* remove right-outer */
 
@@ -1021,7 +1011,6 @@ GtkComboBox .entry:last-child {
     border-width: 2px 2px 2px 0px;
     border-radius: 0px 5px 5px 0px;
 
-
 }
 
 GtkComboBox .button {
@@ -1033,7 +1022,6 @@ GtkComboBox .button {
 GtkComboBox .button *:prelight {
     color: $theme_text_color;
 }
-
 
 GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
@@ -1067,13 +1055,11 @@ GtkComboBox.combobox-entry .button *:prelight {
     text-shadow: 0 1px $toolbar_shadow_color;
 }
 
-
 .primary-toolbar GtkComboBox .cell {
     /* color combobox read-only */
     color:             shade($theme_fg_dark_color, 0.94);
     text-shadow: 0 1px $theme_shadow_dark_color;
 }
-
 
 .toolbar GtkComboBox .entry,
 .toolbar GtkComboBox .entry:focused {
@@ -1139,7 +1125,6 @@ GtkComboBox.combobox-entry .button *:prelight {
     border-width: 1px 1px 1px 1px;
     padding: 2px 3px;
 
-
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:first-child {
@@ -1183,7 +1168,6 @@ GtkComboBox.combobox-entry .button:hover:active:first-child {
 
 */
 
-
 /************
  * Toolbars *
  ************/
@@ -1211,8 +1195,6 @@ GtkHandleBox,
     border-bottom-color: shade($toolbar_gradient_base, 0.90);
     box-shadow: none;
     color: $toolbar_fg_color;
-
-
 
 }
 
@@ -1358,7 +1340,6 @@ GtkHandleBox,
     border-bottom-color:     alpha(#000, 0.25);
 }
 
-
 .primary-toolbar .toolbar .button:hover,
 .primary-toolbar.toolbar .button:hover {
     background-image: -gtk-gradient(linear,
@@ -1374,7 +1355,6 @@ GtkHandleBox,
     border-image: none;
 
 }
-
 
 .toolbar .button:active,
 .toolbar .button:active:hover {
@@ -1589,7 +1569,6 @@ MathWindow .button,
     color: mix($theme_bg_dark_color, $theme_fg_dark_color, 0.50);
 }
 
-
 .toolbar NautilusPathBar .button:hover,
 .toolbar.menubar .button:hover,
 .toolbar .raised .button:hover,
@@ -1696,7 +1675,6 @@ MathWindow .button *:active:hover,
     text-shadow: none;
     color: mix($theme_bg_dark_color, $theme_fg_dark_color, 0.50);
 }
-
 
 .toolbar .entry {
     padding: 4px 4px 4px 6px;
@@ -1907,7 +1885,6 @@ MathWindow .button *:active:hover,
     icon-shadow: 1px 1px $theme_selected_shadow_color;
 }
 
-
 /****************
  * GtkAssistant *
  ****************/
@@ -1925,7 +1902,6 @@ GtkAssistant .sidebar {
     border-right-color: $inactive_frame_color;
     color: mix($theme_fg_color, $theme_bg_color, 0.40);
 }
-
 
 /*********
  * image *
@@ -2078,7 +2054,6 @@ GtkTreeView row:nth-child(even):hover  {
     background-color: shade($theme_base_color, 1.00);
 
 }
-
 
 column-header {
     padding: 0px 2px;
@@ -2261,7 +2236,6 @@ GtkCalendar.button {
     background-image: none;
 }
 
-
 GtkCalendar.highlight {
     background-color: shade($theme_selected_bg_color, 0.85);
     color: $theme_selected_fg_color;
@@ -2269,7 +2243,6 @@ GtkCalendar.highlight {
     padding: 0px;
     border-width: 0px;
 }
-
 
 .warning {
     background-color: $warning_bg_color;
@@ -2298,7 +2271,6 @@ GtkCalendar.highlight {
     color: $theme_selected_fg_color;
     text-shadow: none;
 }
-
 
 /*****************
  * Miscellaneous *
@@ -2691,7 +2663,6 @@ GtkProgressBar.osd.progressbar {
     border-radius: 0;
 }
 
-
 /***************************/
 /* Linked toolbars-buttons */
 /***************************/
@@ -2852,7 +2823,6 @@ GtkProgressBar.osd.progressbar {
                 inset  1px  0px alpha(#000, 0.16),
                 inset  0px -1px alpha(#000, 0.09);
 
-
 }
 
 /* Leftmost toolbars-button insensitive */
@@ -2955,7 +2925,6 @@ GtkProgressBar.osd.progressbar {
                 inset  0px -1px shade($theme_button_border_dark, 1.00);
 }
 
-
 /* Linked single toolbar-button */
 .toolbar.menubar .linked .button:only-child,
 .toolbar.menubar .linked .button:hover:only-child,
@@ -3021,7 +2990,6 @@ GtkProgressBar.osd.progressbar {
                 inset  1px  0px alpha(#000, 0.16),
                 inset -1px  0px alpha(#000, 0.16),
                 inset  0px -1px alpha(#000, 0.09);
-
 
 }
 
@@ -3202,8 +3170,6 @@ GtkProgressBar.osd.progressbar {
                 inset  0px -1px alpha(#000, 0.09);
 }
 
-
-
 /* Linked single button */
 .linked .entry:only-child,
 .linked .button:only-child,
@@ -3235,7 +3201,6 @@ GtkProgressBar.osd.progressbar {
                 inset -1px  0px alpha(#000, 0.09),
                 inset  0px -1px alpha(#000, 0.09);
 }
-
 
 /*************************/
 /* linked inline buttons */

@@ -51,7 +51,6 @@ NautilusWindow .primary-toolbar.toolbar {
     -GtkToolbar-button-relief: normal;
 }
 
-
 #nautilus-search-button * {
     padding: 0px 4px;
 }
@@ -78,7 +77,6 @@ NautilusWindow .primary-toolbar.toolbar .button GtkLabel {
     color: shade($theme_fg_color, 1.00);
     text-shadow: 0px 1px $theme_shadow_color;
 }
-
 
 #nautilus-search-button *:prelight
 NautilusWindow .primary-toolbar .toolbar .button *:hover,
@@ -173,7 +171,6 @@ NautilusWindow .sidebar .view:prelight  {
     text-shadow: 0px 1px $theme_shadow_dark_color;
 }
 
-
 NautilusWindow .sidebar .scrollbar {
     -GtkRange-trough-border:     1;
     -GtkRange-slider-width:     6;
@@ -203,7 +200,6 @@ NautilusWindow .sidebar OsThumb:insensitive,
 NautilusWindow .sidebar OsScrollbar:insensitive {
     background-color: shade($theme_bg_dark_color, 0.68);
 }
-
 
 NautilusWindow .sidebar .frame {
     border-width: 0px;

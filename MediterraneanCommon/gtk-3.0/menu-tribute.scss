@@ -38,7 +38,6 @@
     background-color: $theme_selected_bg_color;
 }
 
-
 .menubar .menu.button:hover,
 .menubar .menu.button:active,
 .menubar .menu.button:active:insensitive,
@@ -75,7 +74,6 @@
 .menu.button GtkArrow {
     color: $menu_fg_dark_color;
 }
-
 
 /***********
  * menubar *
@@ -167,7 +165,6 @@ DbusmenuGtkMenu .menuitem,
     text-shadow: 1px 1px $menu_shadow_dark_color;
 }
 
-
 .toolbar .menuitem GtkLabel,
 .primary-toolbar .menuitem GtkLabel,
 .toolbar .raised .button .menuitem GtkLabel,
@@ -228,7 +225,6 @@ GtkTreeMenu .menuitem *:prelight,
     color: $theme_selected_fg_color;
        text-shadow: 0px 1px $theme_selected_shadow_color;
 }
-
 
 .primary-toolbar .menuitem *:insensitive,
 .toolbar .raised .button .menuitem *:insensitive,
@@ -323,7 +319,6 @@ GtkTreeMenu .menuitem *:prelight,
     background-image: none;
 }
 
-
 .menubar .menuitem GtkScale.trough {
     background-image: -gtk-gradient(linear,
                      left top,
@@ -339,7 +334,6 @@ GtkTreeMenu .menuitem *:prelight,
                 inset -1px -1px alpha(#000, 0.08);
 
 }
-
 
 Genericmenuitem .menuitem .accelerator,
 DbusmenuGtkMenu .menuitem .accelerator,
