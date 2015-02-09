@@ -1,49 +1,49 @@
-@import '../../../MediterraneanCommon/gtk-3.0/gtk-widgets.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/menu.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/scrollbar.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/sidebar.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gtk-widgets-assets.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/unity-greeter.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-panel.scss';
+@import "gtk-widgets";
+@import "menu";
+@import "scrollbar";
+@import "sidebar";
+@import "gtk-widgets-assets";
+@import "unity-greeter";
+@import "gnome-panel";
 
 /* Select style for TABS
 	1.- tabs dark gray (full)
-	@import '../../../MediterraneanCommon/gtk-3.0/tabs-dark.scss';
+	@import "tabs-dark";
 
 	2.- tabs themed blue (full)
-	@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed.scss';
+	@import "tabs-themed";
 
 	3.- Default theme tabs
-	@import '../../../MediterraneanCommon/gtk-3.0/tabs.scss';
+	@import "tabs";
 
 	4.- tabs with dark gray highlight
-	@import '../../../MediterraneanCommon/gtk-3.0/tabs-mono.scss';
+	@import "tabs-mono";
 
 	5.- more traditional style tabs
-	@import '../../../MediterraneanCommon/gtk-3.0/tabs-classic.scss';
+	@import "tabs-classic";
 
 	(Be careful to leave only ONE of the five,
 	edit the line below according to the style you want)
 */
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-mono.scss';
+@import "tabs-mono";
 
 /* some gnome-mdi-apps */
-@import '../../../MediterraneanCommon/gtk-3.0/gnome-mdi.scss';
+@import "gnome-mdi";
 
 /*
 	There are 2 options for Unity panel:
 
 	If you prefer the dark panel "Unity"
 	------------------------------------
-	@import '../../../MediterraneanCommon/gtk-3.0/unity-darkest.scss';
+	@import "unity-darkest";
 
 	If you prefer the default (perfect fit with maximized windows)
 	--------------------------------------------------------------
-	@import '../../../MediterraneanCommon/gtk-3.0/unity.scss';
+	@import "unity";
 
 	(edit the line below according to the style you want)
 -------------------------------------------------------------- */
-@import '../../../MediterraneanCommon/gtk-3.0/unity.scss';
+@import "unity";
 
 /*
 	There are 7 options for nautilus:
@@ -52,39 +52,38 @@
 	 Nautilus 3.6 (default)
 	-----------------------------------
 	Nautilus 3.6.x for gnome-shell 3.6.x or unity
-		@import '../../../MediterraneanCommon/gtk-3.0/nautilus36.scss';
+		@import "nautilus36";
 
 	-----------------------------------
 	 3 for Nautilus 3.4 GNOME-SHELL
 	-----------------------------------
 	1.- nautilus sidebar and pathbar dark gray:
-		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray.scss';
+		@import "gnome-nautilus34-gray";
 	OR
 	2.- nautilus sidebar and pathbar light:
-		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-light.scss';
+		@import "gnome-nautilus34-light";
 	OR
 	3.- nautilus sidebar dark gray and pathbar light:
-		@import '../../../MediterraneanCommon/gtk-3.0/gnome-nautilus34-gray-light.scss';
+		@import "gnome-nautilus34-gray-light";
 
 	-----------------------------------
 	 3 for Nautilus 3.4 UNITY
 	-----------------------------------
 	1.- nautilus sidebar and pathbar dark gray:
-		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray.scss';
+		@import "unity-nautilus34-gray";
 	OR
 	2.- nautilus sidebar and pathbar light:
-		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-light.scss';
+		@import "unity-nautilus34-light";
 	OR
 	3.- nautilus sidebar dark gray and pathbar light:
-		@import '../../../MediterraneanCommon/gtk-3.0/unity-nautilus34-gray-light.scss';
+		@import "unity-nautilus34-gray-light";
 
 
 	(edit the line below according to the style of nautilus you want)
 -------------------------------------------------------------------- */
-@import '../../../MediterraneanCommon/gtk-3.0/nautilus36.scss';
+@import "nautilus36";
 
 /*
-@import '../../../MediterraneanCommon/gtk-3.0/menu-tribute.scss';
-@import '../../../MediterraneanCommon/gtk-3.0/tabs-themed-dark.scss';
+@import "menu-tribute";
+@import "tabs-themed-dark";
 */
-
