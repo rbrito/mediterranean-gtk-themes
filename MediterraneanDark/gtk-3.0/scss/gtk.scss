@@ -223,6 +223,3 @@ $wm_button_bg_active_b: shade($bg_color, 0.9);
 $wm_button_bg_active_c: shade($bg_color, 0.9);
 
 @import "include";
-@import "./gtk-widgets-assets.scss";
-@import "./scrollbar.scss";
-@import "./tabs-themed-dark.scss";
