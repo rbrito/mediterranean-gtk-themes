@@ -1,3 +1,5 @@
+# https://github.com/shimmerproject/Numix/blob/sass/Makefile
+
 SASS=sass
 
 THEMES=\
