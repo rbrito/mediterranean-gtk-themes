@@ -205,7 +205,10 @@ $osd_trough_bg: alpha($osd_button_fg, 0.10);
 
 /* Metacity No modificar! */
 $wm_highlight: #fff;
+$wm_title: $theme_base_color;
 $wm_title_highlight: #fff;
+$wm_title_shadow: shade($theme_base_color, 0.7);
+$wm_unfocused_dark_title: shade($theme_base_color, 0.7);
 
 $wm_bg_a: shade($bg_color, 1.1);
 $wm_bg_b: $bg_color;
