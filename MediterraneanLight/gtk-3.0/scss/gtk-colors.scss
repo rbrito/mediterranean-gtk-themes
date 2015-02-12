@@ -1,0 +1,219 @@
+/* Default color scheme */
+@define-color base_color #{"" + $base_color};
+@define-color bg_color #{"" + $bg_color};
+@define-color text_color #{"" + $text_color};
+@define-color fg_color #{"" + $fg_color};
+@define-color selected_bg_color #{"" + $selected_bg_color};
+@define-color selected_fg_color #{"" + $selected_fg_color};
+@define-color tooltip_bg_color #{"" + $tooltip_bg_color};
+@define-color tooltip_fg_color #{"" + $tooltip_fg_color};
+
+/* Colormap actually used by the theme, to be overridden in other css files */
+@define-color theme_base_color #{"" + $theme_base_color};
+@define-color theme_bg_color #{"" + $theme_bg_color};
+@define-color theme_text_color #{"" + $theme_text_color};
+@define-color theme_fg_color #{"" + $theme_fg_color};
+@define-color theme_shadow_color #{"" + $theme_shadow_color};
+@define-color theme_selected_bg_color #{"" + $theme_selected_bg_color};
+@define-color theme_selected_fg_color #{"" + $theme_selected_fg_color};
+@define-color theme_selected_shadow_color #{"" + $theme_selected_shadow_color};
+@define-color theme_tooltip_bg_color #{"" + $theme_tooltip_bg_color};
+@define-color theme_tooltip_fg_color #{"" + $theme_tooltip_fg_color};
+
+@define-color menu_bg_color #{"" + $menu_bg_color};
+@define-color menu_fg_color #{"" + $menu_fg_color};
+@define-color menu_shadow_color #{"" + $menu_shadow_color};
+
+/*************************[Mediterranean-Night]***************************/
+@define-color theme_bg_dark_color #{"" + $theme_bg_dark_color};
+@define-color theme_fg_dark_color #{"" + $theme_fg_dark_color};
+@define-color theme_text_dark_color #{"" + $theme_text_dark_color};
+@define-color theme_shadow_dark_color #{"" + $theme_shadow_dark_color};
+@define-color theme_highlight_color #{"" + $theme_highlight_color};
+@define-color theme_button_border_dark #{"" + $theme_button_border_dark};
+@define-color theme_entry_border_dark #{"" + $theme_entry_border_dark};
+@define-color theme_path_bg_color #{"" + $theme_path_bg_color};
+@define-color theme_path_active_color #{"" + $theme_path_active_color};
+@define-color theme_tab_dark_active1 #{"" + $theme_tab_dark_active1};
+@define-color theme_tab_dark_active2 #{"" + $theme_tab_dark_active2};
+@define-color theme_mdi_border_color #{"" + $theme_mdi_border_color};
+
+@define-color menu_bg_dark_color #{"" + $menu_bg_dark_color};
+@define-color menu_fg_dark_color #{"" + $menu_fg_dark_color};
+@define-color menu_shadow_dark_color #{"" + $menu_shadow_dark_color};
+@define-color menu_line_dark_color #{"" + $menu_line_dark_color};
+@define-color menu_line_light_color #{"" + $menu_line_light_color};
+/**************************************************************************/
+
+@define-color theme_tab_active1 #{"" + $theme_tab_active1};
+@define-color theme_tab_active2 #{"" + $theme_tab_active2};
+
+@define-color button_raised_gradient_color_a #{"" + $button_raised_gradient_color_a};
+@define-color button_raised_gradient_color_b #{"" + $button_raised_gradient_color_b};
+@define-color button_raised_linked_shadow #{"" + $button_raised_linked_shadow};
+
+@define-color link_color #{"" + $link_color};
+@define-color frame_color #{"" + $frame_color};
+@define-color inactive_frame_color #{"" + $inactive_frame_color};
+@define-color warning_color #{"" + $warning_color};
+@define-color error_color #{"" + $error_color};
+@define-color success_color #{"" + $success_color};
+
+@define-color info_fg_color #{"" + $info_fg_color};
+@define-color info_bg_color #{"" + $info_bg_color};
+@define-color warning_fg_color #{"" + $warning_fg_color};
+@define-color warning_bg_color #{"" + $warning_bg_color};
+@define-color question_fg_color #{"" + $question_fg_color};
+@define-color question_bg_color #{"" + $question_bg_color};
+@define-color error_fg_color #{"" + $error_fg_color};
+@define-color error_bg_color #{"" + $error_bg_color};
+
+@define-color os_chrome_bg_color #{"" + $os_chrome_bg_color};
+@define-color os_chrome_fg_color #{"" + $os_chrome_fg_color};
+
+@define-color os_chrome_selected_bg_color #{"" + $os_chrome_selected_bg_color};
+@define-color os_chrome_selected_fg_color #{"" + $os_chrome_selected_fg_color};
+
+@define-color chrome_bg_color #{"" + $chrome_bg_color};
+@define-color chrome_fg_color #{"" + $chrome_fg_color};
+
+@define-color entry_text_color #{"" + $entry_text_color};
+@define-color focused_entry_border #{"" + $focused_entry_border};
+@define-color focused_entry_outer #{"" + $focused_entry_outer};
+
+@define-color entry_text_dark_color #{"" + $entry_text_dark_color};
+@define-color entry_bg_dark_color #{"" + $entry_bg_dark_color};
+@define-color focused_dark_entry_border #{"" + $focused_dark_entry_border};
+@define-color focused_dark_entry_outer #{"" + $focused_dark_entry_outer};
+
+/* $sidebar_background: shade(#e1e5e8, 0.95); */
+@define-color sidebar_background #{"" + $sidebar_background};
+@define-color sidebar_icon #{"" + $sidebar_icon};
+@define-color sidebar_selected_bg #{"" + $sidebar_selected_bg};
+@define-color sidebar_fg_color #{"" + $sidebar_fg_color};
+
+@define-color button_base #{"" + $button_base};
+@define-color button_gradient1 #{"" + $button_gradient1};
+@define-color button_gradient2 #{"" + $button_gradient2};
+@define-color button_gradient3 #{"" + $button_gradient3};
+@define-color button_gradient4 #{"" + $button_gradient4};
+
+@define-color button_bg_active #{"" + $button_bg_active};
+@define-color button_border #{"" + $button_border};
+@define-color button_border_active #{"" + $button_border_active};
+
+@define-color insensitive_bg_color #{"" + $insensitive_bg_color};
+@define-color insensitive_fg_color #{"" + $insensitive_fg_color};
+@define-color insensitive_border_color #{"" + $insensitive_border_color};
+
+@define-color trough_bg_color_a #{"" + $trough_bg_color_a};
+@define-color trough_bg_color_b #{"" + $trough_bg_color_b};
+
+@define-color internal_element_color #{"" + $internal_element_color};
+@define-color internal_element_prelight #{"" + $internal_element_prelight};
+@define-color internal_element_insensitive #{"" + $internal_element_insensitive};
+
+@define-color scale_fill #{"" + $scale_fill};
+@define-color scale_border_a #{"" + $scale_border_a};
+@define-color scale_border_b #{"" + $scale_border_b};
+
+@define-color progressbar_fill_a #{"" + $progressbar_fill_a};
+@define-color progressbar_fill_b #{"" + $progressbar_fill_b};
+
+@define-color highlighted_border #{"" + $highlighted_border};
+@define-color transparent #{"" + $transparent};
+
+@define-color notebook_border #{"" + $notebook_border};
+
+/* $toolbar_gradient_base: shade(mix(#d5dade, $theme_bg_dark_color, 0.75), 0.92); */
+@define-color toolbar_gradient_base #{"" + $toolbar_gradient_base};
+@define-color toolbar_fg_color #{"" + $toolbar_fg_color};
+@define-color toolbar_shadow_color #{"" + $toolbar_shadow_color};
+@define-color toolbar_border_color #{"" + $toolbar_border_color};
+@define-color toolbar_active_button_color #{"" + $toolbar_active_button_color};
+
+@define-color nautilus_cluebar_color #{"" + $nautilus_cluebar_color};
+@define-color treeview_focus_border #{"" + $treeview_focus_border};
+
+@define-color calc_display_fg_color #{"" + $calc_display_fg_color};
+
+@define-color calendar_text_color #{"" + $calendar_text_color};
+
+@define-color menu_tribute_color1 #{"" + $menu_tribute_color1};
+@define-color menu_tribute_color2 #{"" + $menu_tribute_color2};
+
+@define-color expander_row_selected_color #{"" + $expander_row_selected_color};
+@define-color test #{"" + $test};
+
+/*******
+ * OSD *
+ *******/
+@define-color osd_highlight #{"" + $osd_highlight};
+@define-color osd_lowlight #{"" + $osd_lowlight};
+@define-color osd_base #{"" + $osd_base};
+
+@define-color osd_fg #{"" + $osd_fg};
+@define-color osd_bg #{"" + $osd_bg};
+
+@define-color osd_bg_backdrop #{"" + $osd_bg_backdrop};
+
+@define-color osd_text_shadow #{"" + $osd_text_shadow};
+
+@define-color osd_toolbar_bg_a #{"" + $osd_toolbar_bg_a};
+@define-color osd_toolbar_bg_b #{"" + $osd_toolbar_bg_b};
+@define-color osd_toolbar_bg_c #{"" + $osd_toolbar_bg_c};
+
+@define-color osd_button_bg_a #{"" + $osd_button_bg_a};
+@define-color osd_button_bg_b #{"" + $osd_button_bg_b};
+@define-color osd_button_bg_c #{"" + $osd_button_bg_c};
+
+@define-color osd_button_bg_insensitive #{"" + $osd_button_bg_insensitive};
+@define-color osd_button_bg_insensitive_active #{"" + $osd_button_bg_insensitive_active};
+
+@define-color osd_button_bg_hover_a #{"" + $osd_button_bg_hover_a};
+@define-color osd_button_bg_hover_b #{"" + $osd_button_bg_hover_b};
+@define-color osd_button_bg_hover_c #{"" + $osd_button_bg_hover_c};
+
+@define-color osd_button_bg_active_a #{"" + $osd_button_bg_active_a};
+@define-color osd_button_bg_active_b #{"" + $osd_button_bg_active_b};
+@define-color osd_button_bg_active_c #{"" + $osd_button_bg_active_c};
+
+@define-color osd_button_bg_backdrop #{"" + $osd_button_bg_backdrop};
+@define-color osd_button_bg_backdrop_hover #{"" + $osd_button_bg_backdrop_hover};
+@define-color osd_button_bg_backdrop_active #{"" + $osd_button_bg_backdrop_active};
+@define-color osd_button_bg_backdrop_insensitive #{"" + $osd_button_bg_backdrop_insensitive};
+
+@define-color osd_button_fg_backdrop #{"" + $osd_button_fg_backdrop};
+@define-color osd_button_fg_backdrop_active #{"" + $osd_button_fg_backdrop_active};
+
+@define-color osd_button_fg #{"" + $osd_button_fg};
+@define-color osd_button_fg_hover #{"" + $osd_button_fg_hover};
+@define-color osd_button_fg_active #{"" + $osd_button_fg_active};
+@define-color osd_button_fg_insensitive #{"" + $osd_button_fg_insensitive};
+
+@define-color osd_button_border #{"" + $osd_button_border};
+@define-color osd_button_inset #{"" + $osd_button_inset};
+@define-color osd_button_shadow #{"" + $osd_button_shadow};
+
+@define-color osd_trough_bg #{"" + $osd_trough_bg};
+
+/* Metacity No modificar! */
+@define-color wm_highlight #{"" + $wm_highlight};
+@define-color wm_title_highlight #{"" + $wm_title_highlight};
+
+@define-color wm_bg_a #{"" + $wm_bg_a};
+@define-color wm_bg_b #{"" + $wm_bg_b};
+
+@define-color wm_button_bg_a #{"" + $wm_button_bg_a};
+@define-color wm_button_bg_b #{"" + $wm_button_bg_b};
+@define-color wm_button_bg_c #{"" + $wm_button_bg_c};
+@define-color wm_button_bg_d #{"" + $wm_button_bg_d};
+
+@define-color wm_button_bg_hover_a #{"" + $wm_button_bg_hover_a};
+@define-color wm_button_bg_hover_b #{"" + $wm_button_bg_hover_b};
+@define-color wm_button_bg_hover_c #{"" + $wm_button_bg_hover_c};
+@define-color wm_button_bg_hover_d #{"" + $wm_button_bg_hover_d};
+
+@define-color wm_button_bg_active_a #{"" + $wm_button_bg_active_a};
+@define-color wm_button_bg_active_b #{"" + $wm_button_bg_active_b};
+@define-color wm_button_bg_active_c #{"" + $wm_button_bg_active_c};
