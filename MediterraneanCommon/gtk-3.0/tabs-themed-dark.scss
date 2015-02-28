@@ -8,6 +8,13 @@
 $theme_tab_bg_color: shade($button_bg_active, 0.90);
 
 .notebook tab {
+    background-image: -gtk-gradient(linear,
+                                     left top, left bottom,
+                                     from(shade($theme_tab_bg_color, 1.10)),
+                                     color-stop(0.48, shade($theme_tab_bg_color, 1.06)),
+                                     color-stop(0.52, shade($theme_tab_bg_color, 0.95)),
+                                     to(shade($theme_tab_bg_color, 0.91)));
+
     border-width: 1px;
     border-style: solid;
     border-radius: 0px;
