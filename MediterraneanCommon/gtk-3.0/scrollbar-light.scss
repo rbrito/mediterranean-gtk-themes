@@ -1,0 +1,18 @@
+@import 'scrollbar';
+
+.scrollbar {
+    -GtkRange-slider-width: 7;
+    -GtkRange-trough-border: 3;
+}
+
+.scrollbar.slider,
+.scrollbar.button {
+    border-width: 0px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:         alpha(#000, 0.25);
+}
+
+.scrollbar.slider:prelight {
+    background-color:         alpha(#000, 0.42);
+}
