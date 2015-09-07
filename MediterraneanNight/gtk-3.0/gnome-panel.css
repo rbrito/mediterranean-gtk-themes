@@ -1,3 +1,5 @@
+/* -*- tab-width: 4 -*- */
+
 /**********************
  * Fallback Mode Panel
  **********************/
@@ -8,18 +10,18 @@ PanelToplevel,
 PanelWidget,
 PanelAppletFrame,
 PanelApplet {
-    background-image: 			none;
-    background-color: 			@os_chrome_bg_color;
-    color: 						@os_chrome_fg_color;
-	border-width: 0px;
-	border-image: 				none;
-    border-style:               none;
-	text-shadow:				none;
+    background-image: none;
+    background-color: @os_chrome_bg_color;
+    color: @os_chrome_fg_color;
+    border-width: 0px;
+    border-image: none;
+    border-style: none;
+    text-shadow: none;
 }
 
 .gnome-panel-menu-bar .menu GtkSwitch.trough,
 PanelApplet > GtkMenuBar.menubar .menu GtkSwitch.trough {
-/*
+    /*
 .gnome-panel-menu-bar .menu GtkSwitch.trough:active:prelight,
 PanelApplet > GtkMenuBar.menubar .menu GtkSwitch.trough:active:prelight { */
     color: transparent;
@@ -32,12 +34,12 @@ ClockBox,
 }
 
 .gnome-panel-menu-bar .menuitem:prelight {
-  /*  background-color: @os_chrome_selected_bg_color;
+    /*  background-color: @os_chrome_selected_bg_color;
     color: @os_chrome_selected_fg_color; */
 }
 
 .gnome-panel-menu-bar .menuitem *:prelight {
- /*   color: @os_chrome_selected_fg_color;
+    /*   color: @os_chrome_selected_fg_color;
     text-shadow: @os_chrome_bg_color 0 1; */
 }
 
@@ -55,15 +57,15 @@ PanelApplet .button *:prelight {
     border-width: 0px;
     border-radius: 0px;
 
-	box-shadow: none;
+    box-shadow: none;
 
     color: @os_chrome_fg_color;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 PanelToplevel {
-	/* color borde panel */
-	background-color:		shade(@os_chrome_bg_color, 0.70);
+    /* color borde panel */
+    background-color: shade(@os_chrome_bg_color, 0.70);
 
 }
 
@@ -76,13 +78,13 @@ PanelApplet .button *:active:prelight {
                                      from (shade(@theme_selected_bg_color, 0.9)),
                                      to   (shade(@theme_selected_bg_color, 1.0)));
 
-	color: @os_chrome_selected_fg_color;
-	text-shadow: none;
+    color: @os_chrome_selected_fg_color;
+    text-shadow: none;
     border-width: 0px;
     border-radius: 0px;
     border-image: none;
 
-	box-shadow: none;
+    box-shadow: none;
 
 }
 
@@ -103,14 +105,14 @@ NaTrayApplet {
 
 WnckPager, WnckTasklist {
     color: @os_chrome_fg_color;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 GsmFailWhaleDialog {
     background-color: @os_chrome_bg_color;
     background-image: none;
     color: @os_chrome_fg_color;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 GsmFailWhaleDialog * {

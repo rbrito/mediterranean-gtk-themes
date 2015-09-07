@@ -1,3 +1,5 @@
+/* -*- tab-width: 4 -*- */
+
 /****************
  * Applications *
  ****************/
@@ -5,8 +7,7 @@
 
 ApDocView, /* Abiword */
 EogScrollView, /* Eog */
-CheeseThumbView /* Cheese */
-{
+CheeseThumbView /* Cheese */ {
     background-color: @chrome_bg_color;
     -EogScrollView-shadow-type: none;
 }
@@ -45,16 +46,16 @@ NautilusWindow .menubar {
                                      left top, left bottom,
                                      from (shade (@theme_bg_dark_color, 1.00)),
                                      to (shade (@theme_bg_dark_color, 0.94)));
-	/* remove 3d border */
-	box-shadow: none;
-	border-bottom-color:  shade(@theme_bg_dark_color, 0.70);
+    /* remove 3d border */
+    box-shadow: none;
+    border-bottom-color:  shade(@theme_bg_dark_color, 0.70);
 }
 
 NautilusWindow .primary-toolbar.toolbar {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_color, 0.85)),
-							 		 color-stop (0.10, shade(@theme_bg_color, 1.00) ),
+				     color-stop (0.10, shade(@theme_bg_color, 1.00) ),
                                      to   (shade(@theme_bg_color, 1.05)));
 
     border-width: 0px 0px 1px 0px;
@@ -72,7 +73,7 @@ NautilusWindow .primary-toolbar.toolbar {
 }
 
 NautilusWindow .primary-toolbar.toolbar .button {
-	padding: 0px 2px;
+    padding: 0px 2px;
 }
 
 #nautilus-search-button *,
@@ -80,25 +81,25 @@ NautilusWindow .primary-toolbar.toolbar .button {
     background-image: none;
     border-image: none;
     border-style: solid;
-	border-width: 5px 4px 5px 4px;
+    border-width: 5px 4px 5px 4px;
     border-radius: 9px;
-	border-color: transparent;
+    border-color: transparent;
     box-shadow: none;
 }
 
 #nautilus-search-button *,
 NautilusWindow .primary-toolbar.toolbar GtkLabel,
 NautilusWindow .primary-toolbar.toolbar .button GtkLabel {
-	padding: 0px 2px;
-	color: shade(@theme_fg_color, 1.00);
+    padding: 0px 2px;
+    color: shade(@theme_fg_color, 1.00);
     text-shadow: 0px 1px @theme_shadow_color;
 }
 
 
 #nautilus-search-button *:prelight
-NautilusWindow .primary-toolbar .toolbar .button *:hover,
+                              NautilusWindow .primary-toolbar .toolbar .button *:hover,
 NautilusWindow .primary-toolbar.toolbar .button *:hover {
-	color: shade(@theme_text_color, 1.00);
+    color: shade(@theme_text_color, 1.00);
     text-shadow: 0px 1px @theme_shadow_color;
 }
 
@@ -106,7 +107,7 @@ NautilusWindow .primary-toolbar.toolbar .button *:hover {
 #nautilus-search-button *:active:prelight,
 NautilusWindow .primary-toolbar.toolbar .button *:active,
 NautilusWindow .primary-toolbar.toolbar .button *:active:hover {
-	color: shade(@theme_fg_color, 1.25);
+    color: shade(@theme_fg_color, 1.25);
     text-shadow: 0px 1px @theme_shadow_color;
 }
 
@@ -120,22 +121,23 @@ NautilusWindow .primary-toolbar.toolbar .button:active:hover {
                                      from (alpha(#000, 0.20)),
                                      to   (alpha(#000, 0.06)));
 
-	border-width: 5px 4px 5px 4px;
+    border-width: 5px 4px 5px 4px;
     border-radius: 9px;
-	border-color: transparent;
+    border-color: transparent;
 
-    box-shadow: inset  0px  3px alpha(#000, 0.02),
-				inset  0px  2px alpha(#000, 0.06),
-                inset  3px  0px alpha(#000, 0.02),
-                inset  2px  0px alpha(#000, 0.04),
-                inset -3px  0px alpha(#000, 0.02),
-                inset -2px  0px alpha(#000, 0.04),
-                inset  0px -2px alpha(#fff, 0.01),
+    box-shadow:
+    inset  0px  3px alpha(#000, 0.02),
+    inset  0px  2px alpha(#000, 0.06),
+    inset  3px  0px alpha(#000, 0.02),
+    inset  2px  0px alpha(#000, 0.04),
+    inset -3px  0px alpha(#000, 0.02),
+    inset -2px  0px alpha(#000, 0.04),
+    inset  0px -2px alpha(#fff, 0.01),
 
-				inset  0px  1px alpha(#000, 0.26),
-				inset  1px  0px alpha(#000, 0.20),
-				inset -1px  0px alpha(#000, 0.20),
-				inset  0px -1px alpha(#000, 0.14);
+    inset  0px  1px alpha(#000, 0.26),
+    inset  1px  0px alpha(#000, 0.20),
+    inset -1px  0px alpha(#000, 0.20),
+    inset  0px -1px alpha(#000, 0.14);
 }
 
 #nautilus-search-button .button:prelight,
@@ -146,12 +148,13 @@ NautilusWindow .primary-toolbar.toolbar .button:hover {
 				     to   (alpha (shade (@theme_bg_color, 0.50), 0.25)));
 
     border-image: none;
-	border-color: transparent;
+    border-color: transparent;
 
-    box-shadow: inset  0px  1px alpha(#000, 0.15),
-				inset  1px  0px alpha(#000, 0.20),
-				inset -1px  0px alpha(#000, 0.20),
-				inset  0px -1px alpha(#000, 0.25);
+    box-shadow:
+    inset  0px  1px alpha(#000, 0.15),
+    inset  1px  0px alpha(#000, 0.20),
+    inset -1px  0px alpha(#000, 0.20),
+    inset  0px -1px alpha(#000, 0.25);
 }
 
 NautilusFloatingBar {
@@ -179,7 +182,7 @@ NautilusFloatingBar .button {
 }
 
 NautilusWindow .sidebar .scrollbar {
-	-GtkRange-trough-border: 	1;
+    -GtkRange-trough-border: 	1;
     -GtkRange-slider-width:     6;
 }
 
@@ -188,8 +191,8 @@ NautilusWindow .sidebar .scrollbar.trough.vertical {
     background-image: none;
     background-color: @sidebar_background;
 
-	border-width: 0px;
-	border-style: none;
+    border-width: 0px;
+    border-style: none;
 }
 
 NautilusWindow .sidebar .frame {

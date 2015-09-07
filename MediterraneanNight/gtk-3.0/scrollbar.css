@@ -1,3 +1,5 @@
+/* -*- tab-width: 4 -*- */
+
 /**************
  * Scrollbars *
  **************/
@@ -15,42 +17,42 @@
 }
 
 .scrollbar.trough.vertical {
-	box-shadow: none;
+    box-shadow: none;
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@theme_bg_color, 1.00)),
                                      to (shade (@theme_bg_color, 1.10)));
 
-	border-style: solid;
-	border-width: 0px 0px 0px 1px;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
     border-radius: 0px;
-	border-left-color: shade (@theme_bg_color, 0.96);
+    border-left-color: shade (@theme_bg_color, 0.96);
 
 }
 
 .scrollbar.trough.horizontal {
-	box-shadow: none;
+    box-shadow: none;
     border-radius: 0px;
-	border-width: 0px;
+    border-width: 0px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_bg_color, 1.00)),
                                      to (shade (@theme_bg_color, 1.10)));
 
-	border-style: solid;
-	border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
     border-radius: 0px;
-	border-top-color: shade (@theme_bg_color, 0.96);
+    border-top-color: shade (@theme_bg_color, 0.96);
 }
 
 .scrollbar.slider,
 .scrollbar.button {
     border-width: 0px;
-	border-style: none;
+    border-style: none;
     border-radius: 10px;
-	background-color:         alpha (#000, 0.25);
+    background-color:         alpha (#000, 0.25);
 }
 
 .scrollbar.slider:prelight {
-	background-color:         alpha (#000, 0.42);
+    background-color:         alpha (#000, 0.42);
 }
 
 .scrollbar.slider:insensitive {

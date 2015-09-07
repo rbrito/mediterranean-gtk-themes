@@ -1,3 +1,5 @@
+/* -*- tab-width: 4 -*- */
+
 /*************************
  * menu
  *
@@ -5,28 +7,28 @@
 
 .toolbar .raised .menu,
 .menu {
-	/* menu contextual */
+    /* menu contextual */
     background-image: none;
     background-color: @menu_bg_dark_color;
-/*
+    /*
 	background-image: -gtk-gradient (radial,
                                        1.00 0.50, 0.30,
        								   0.50 0.00, 1.10,
 									   from (shade(@menu_bg_dark_color, 1.15)),
        								   to   (shade(@menu_bg_dark_color, 0.95)));*/
     background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@menu_bg_dark_color, 1.03)),
-                                     to   (shade(@menu_bg_dark_color, 0.97)));
+    -gtk-gradient (linear,
+                   left top, left bottom,
+                   from (shade(@menu_bg_dark_color, 1.03)),
+                   to   (shade(@menu_bg_dark_color, 0.97)));
 
     padding: 5px 0px;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
 
-	border-color: shade(@menu_bg_dark_color, 0.97);
-	border-image: 	none;
+    border-color: shade(@menu_bg_dark_color, 0.97);
+    border-image: none;
 }
 
 .menu:selected {
@@ -58,11 +60,11 @@
 }
 
 .menu.button {
-	padding: 0px;
+    padding: 0px;
     background-image: none;
     background-color: shade (@menu_bg_dark_color, 0.95);
-	color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.3);
-	box-shadow: none;
+    color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.3);
+    box-shadow: none;
     border-image: none;
     border-style: none;
 }
@@ -79,15 +81,15 @@
     -GtkWidget-window-dragging: true;
     background-color: shade (@theme_bg_dark_color, 1.00);
     background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@theme_bg_dark_color, 1.00)),
-                                     to   (shade(@theme_bg_dark_color, 1.00)));
+    -gtk-gradient (linear,
+                   left top, left bottom,
+                   from (shade(@theme_bg_dark_color, 1.00)),
+                   to   (shade(@theme_bg_dark_color, 1.00)));
     background-repeat: repeat;
     background-position: top left;
 
     /* linea 3D  (oscura) */
-	box-shadow: inset  0px -1px @menu_line_dark_color;
+    box-shadow: inset  0px -1px @menu_line_dark_color;
 
     /* linea 3D (clara) */
     border-image: none;
@@ -111,7 +113,7 @@
 .menubar .menuitem:hover {
     border-radius: 3px 3px 0 0;
     color: @theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 /************
@@ -131,7 +133,7 @@ DbusmenuGtkMenu .menuitem *,
 .primary-toolbar .button .menuitem *,
 .menu .menuitem *,
 .menuitem {
-/* Arregla cambio de altura en menu item nautilus view options */
+    /* Arregla cambio de altura en menu item nautilus view options */
     padding: 0px;
     border-width: 0px;
 
@@ -151,7 +153,7 @@ DbusmenuGtkMenu .menuitem,
     background: transparent;
 
     padding: 2px 4px;
-	border-radius: 0px;
+    border-radius: 0px;
 
     color: @menu_fg_dark_color;
     text-shadow: 1px 1px @menu_shadow_dark_color;
@@ -187,20 +189,20 @@ GtkComboBox .menuitem * {
 
 GtkComboBox .menuitem *:hover {
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 .toolbar .raised .button .menuitem:hover,
 .toolbar.menubar .button .menuitem:hover,
 .menu .menuitem:hover,
 .menuitem:hover {
-	/* contextual menu item-selected */
+    /* contextual menu item-selected */
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_selected_bg_color, 0.9)),
                                      to   (shade (@theme_selected_bg_color, 1.0)));
 
     color: @theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
     border-radius: 0;
     border-image: none;
 }
@@ -219,7 +221,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:hover,
 .menu .menuitem:hover {
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+    text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 .primary-toolbar .menuitem *:insensitive,
@@ -229,7 +231,7 @@ GtkTreeMenu .menuitem *:prelight,
 .toolbar .menuitem *:insensitive,
 .menuitem:insensitive,
 .menuitem *:insensitive {
-	/* contextual menu insensitive */
+    /* contextual menu insensitive */
     color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.4);
     text-shadow: none;
     background-color: transparent;
@@ -246,7 +248,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     border-width: 0px;
-	border-style: none;
+    border-style: none;
     background-image: none;
 
 }
@@ -260,10 +262,10 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem.check:active,
 .menuitem.radio:active {
     border-width: 0px;
-	border-style: none;
+    border-style: none;
     background-image: none;
-	background-color: @menu_bg_dark_color;
-	/* contextual menu check */
+    background-color: @menu_bg_dark_color;
+    /* contextual menu check */
     color: @menu_fg_dark_color;
 }
 
@@ -319,17 +321,17 @@ GtkTreeMenu .menuitem *:prelight,
 
 .menubar .menuitem GtkScale.trough {
     background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade(@menu_bg_dark_color, 0.80)),
-                     color-stop (0.20, shade(@menu_bg_dark_color, 0.85)),
-			         to   (shade(@menu_bg_dark_color, 0.96)));
+			                         left top,
+			                         left bottom,
+			                         from (shade(@menu_bg_dark_color, 0.80)),
+                                     color-stop (0.20, shade(@menu_bg_dark_color, 0.85)),
+			                         to   (shade(@menu_bg_dark_color, 0.96)));
 
     border-style: none;
     border-width: 0px;
     border-radius: 8px;
     box-shadow: inset  1px  1px alpha(#000, 0.08),
-                inset -1px -1px alpha(#000, 0.08);
+    inset -1px -1px alpha(#000, 0.08);
 
 }
 
@@ -383,13 +385,13 @@ GtkComboBox .menuitem.separator,
 .menuitem.separator {
     -GtkWidget-wide-separators: false;
     -GtkMenuItem-horizontal-padding: 0;
-	-GtkWidget-separator-height: 1;
+    -GtkWidget-separator-height: 1;
 
-	border-width: 0px;
-	border-style: none;
+    border-width: 0px;
+    border-style: none;
     border-image: none;
 
-	color: alpha(#000, 0.05);
+    color: alpha(#000, 0.05);
 
 }
 
