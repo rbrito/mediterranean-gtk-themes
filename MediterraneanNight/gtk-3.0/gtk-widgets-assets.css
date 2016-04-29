@@ -128,6 +128,107 @@ GtkCheckButton:selected:focus {
 }
 
 */
+
+/* Fix {check,radio}boxes.
+
+  Source: https://mail.gnome.org/archives/commits-list/2014-August/msg03650.html
+*/
+
+.check,
+.check:checked,
+.check:insensitive {
+    border-style: none;
+}
+
+GtkCheckButton:hover,
+GtkCheckButton:checked:hover,
+GtkCheckButton:active,
+GtkCheckButton:active:focus {
+}
+
+.check,
+.check row:active,
+.check row:active:focused {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"));
+}
+
+.check:insensitive,
+.check row:active:insensitive,
+.check row:active:focused:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"));
+}
+
+.check:checked,
+.check row:active:checked,
+.check row:active:focused:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"));
+}
+
+.check:checked:insensitive,
+.check row:active:checked:insensitive,
+.check row:active:focused:checked:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"));
+}
+
+.check:inconsistent,
+.check row:active:inconsistent,
+.check row:active:focused:inconsistent {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
+}
+
+.check:inconsistent:insensitive,
+.check row:active:inconsistent:insensitive,
+.check row:active:focused:inconsistent:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"));
+}
+
+
+
+
+
+
+
+
+.radio,
+.radio row:active,
+.radio row:active:focused {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.png"));
+}
+
+.radio:insensitive,
+.radio row:active:insensitive,
+.radio row:active:focused:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-insensitive.png"));
+}
+
+.radio:checked,
+.radio row:active:checked,
+.radio row:active:focused:checked {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"));
+}
+
+.radio:checked:insensitive,
+.radio row:active:checked:insensitive,
+.radio row:active:focused:checked:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-selected-insensitive.png"));
+}
+
+.radio:inconsistent,
+.radio row:active:inconsistent,
+.radio row:active:focused:inconsistent {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"));
+
+}
+
+.radio:inconsistent:insensitive,
+.radio row:active:inconsistent:insensitive,
+.radio row:active:focused:inconsistent:insensitive {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"));
+    background-color: transparent;
+}
+
+
+
 .primary-toolbar GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button:nth-child(last),
