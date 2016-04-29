@@ -159,12 +159,12 @@ GtkLabel:insensitive {
     border-style: solid;
     border-radius: 4px;
     border-color: 		alpha(@theme_tooltip_bg_color, 0.95);
-    background-color: 	alpha(@theme_tooltip_bg_color, 0.85);
+    background-color: 	@theme_tooltip_bg_color;
     color: 				shade(@theme_tooltip_fg_color, 0.90);
 }
 
 .tooltip * {
-    background-color: alpha(@theme_tooltip_bg_color, 0.0);
+    background-color: @theme_tooltip_bg_color;
 }
 
 .grip {
@@ -238,6 +238,23 @@ GtkLabel:insensitive {
 .titlebar {
     text-shadow: 0 1px @wm_title_shadow;
     border-radius: 7px 7px 0px 0px;
+    background-color: @theme_bg_color;
+}
+
+.header-bar .titlebar .titlebutton,
+.header-bar .button.image-button,
+.header-bar .titlebar .image-button,
+.titlebar .titlebutton
+{
+    color: @theme_text_color;
+    background-color: @theme_bg_color;
+
+    border-color: transparent;
+    border-radius: 6px;
+    border-width: 1px 1px 2px 1px;
+
+    icon-shadow: 0px 1px @theme_shadow_dark_color;
+    padding: 5px 5px 6px 5px;
 }
 
 /* this is the default titlebar that is added by GTK
@@ -319,12 +336,34 @@ GtkLabel:insensitive {
     box-shadow: 0 2px 8px 3px @theme_shadow_dark_color;
 
     /* this is used for the resize cursor area */
-    margin: 10px;
+    margin: 0px;
 }
 
 .window-frame:backdrop {
     box-shadow: 0 2px 5px 1px @theme_shadow_dark_color;
 }
+
+.window-frame, .window-frame:backdrop {
+  box-shadow: 0 0 0 black;
+  border-style: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+.titlebar {
+  border-radius: 0;
+}
+
+/* Apparently the following may be sufficient:
+
+Source: http://unix.stackexchange.com/a/168924
+
+.window-frame {
+  box-shadow: none;
+  margin: 0;
+}
+
+*/
 
 /*************
  * separator *
@@ -2107,6 +2146,7 @@ GtkAssistant .sidebar {
 GtkImage,
 GtkImage:insensitive {
     background-color: @transparent;
+    color: @theme_fg_color;
 }
 
 /****************
@@ -3697,4 +3737,41 @@ GtkProgressBar.osd.progressbar {
                        alpha(black, 0.13)
                        alpha(black, 0.13)
                        alpha(black, 0.13);
+}
+
+GtkButton {
+    -GtkWidget-focus-line-width: 0;
+
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (@button_gradient1),
+                                     color-stop (0.40, @button_gradient2),
+                                     color-stop (0.60, @button_gradient3),
+                                     to               (@button_gradient4));
+
+    border-width: 2px;
+    border-radius: 6px;
+    border-style: solid;
+
+    /* outer */
+    border-top-color: 		transparent;
+    border-left-color: 		alpha (#000, 0.01);
+    border-right-color: 	alpha (#000, 0.01);
+    border-bottom-color: 	alpha (#000, 0.03);
+
+    box-shadow:
+    inset  0px  2px alpha(#fff, 0.11),
+    inset  2px  0px alpha(#fff, 0.09),
+    inset -2px  0px alpha(#fff, 0.09),
+    inset  0px -2px alpha(#fff, 0.07),
+    inset  0px  1px alpha(shade(@button_border, 1.00), 0.70),
+    inset  1px  0px alpha(shade(@button_border, 0.94), 0.80),
+    inset -1px  0px alpha(shade(@button_border, 0.94), 0.80),
+    inset  0px -1px alpha(shade(@button_border, 0.88), 0.90);
+
+    /* box-shadow Syntax */
+    /* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
+
+    color: 			@theme_fg_color;
+    text-shadow: 0px 1px @theme_shadow_color;
 }
